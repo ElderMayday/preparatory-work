@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  5 MAR 2017 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  8 MAR 2017 20:39
 entering extended mode
 **./state-of-art.tex
 (state-of-art.tex
@@ -246,37 +246,38 @@ Overfull \hbox (6.89363pt too wide) in paragraph at lines 60--60
  []
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 84.
+LaTeX Warning: Empty `thebibliography' environment on input line 88.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
 [3] [4]
-Overfull \vbox (311.56677pt too high) has occurred while \output is active []
+Overfull \vbox (363.06677pt too high) has occurred while \output is active []
 
 
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
  (state-of-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `state-of-art.out' has not changed.
-(rerunfilecheck)             Checksum: 85B0C5314F78D8BDFB304179C0238F5A;2093.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
+(rerunfilecheck)             Checksum: F96ED2E0E60C856D9CA952DEBB7BC606;2246.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 5584 strings out of 493333
- 86336 string characters out of 3139195
+ 5588 strings out of 493333
+ 86396 string characters out of 3139195
  266991 words of memory out of 3000000
- 9085 multiletter control sequences out of 15000+200000
+ 9087 multiletter control sequences out of 15000+200000
  9416 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,38p,217b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,6n,38p,864b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on state-of-art.pdf (5 pages, 79524 bytes).
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on state-of-art.pdf (5 pages, 100807 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
