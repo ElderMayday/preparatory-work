@@ -3,14 +3,18 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{xcolor}
-\usepackage{lipsum}
+\usepackage{mdframed}
 \author{Aldar Saranov}
 \date{\today}
 \title{Development of an automatically configurable ant colony optimization framework. State of art.}
 
+\newmdenv[
+  backgroundcolor=gray!20,
+  frametitle=Definition,
+  skipabove=\topsep,
+  skipbelow=\topsep,
+]{definition}
 
-
-\definecolor{def}{gray}{0.95}
 
 %-----------------------------------------------------
 
@@ -30,14 +34,30 @@ Some animal species show an extreme degree of social organization. Such species 
 Section descriptions.
 Heuristic information.
 Pheromones.
+Constructive heuristics.
 
 \section{Combinatorial Optimization Problems and Constructive
 Heuristics}
 
-\colorbox{def}{Combinatorial Optimization Problem is a tuple ($\phi,\omega$, f).}\\
+
+\begin{definition}
+	\underline{Optimization Problem} is a tuple ($\phi,\omega, f$), where
+	\begin{itemize}
+		\item{$\phi$ is a \underline{search space} consisting of all possible assignments of discrete variables $x_i$, with $i=1,...,n$ }
+		\item{$\omega$ is a set of constraints for the decision variables}
+		\item{$f:\phi \to R$ is an objective function which has to be optimized}
+	\end{itemize}
+\end{definition}
+
+
+TSP and QAP description.
+Solution components.
+Feasible solution
 
 
 \section{The ACO Algorithmic Framework}
+
+ACO algorithm.
 
 \subsection{Choice of pheromone trails and heuristic information}
 
