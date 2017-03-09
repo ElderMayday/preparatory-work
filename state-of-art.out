@@ -1,5 +1,5 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Combinatorial Optimization Problems and Constructive Heuristics}{}% 2
+\BOOKMARK [1][-]{section.1}{Introduction \(1 page\)}{}% 1
+\BOOKMARK [1][-]{section.2}{Combinatorial Optimization Problems and Constructive Heuristics \(17 pages\)}{}% 2
 \BOOKMARK [1][-]{section.3}{The ACO Algorithmic Framework}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Choice of pheromone trails and heuristic information}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Solution construction}{section.3}% 5
@@ -24,6 +24,6 @@
 \BOOKMARK [2][-]{subsection.6.2}{ACO and exact methods}{section.6}% 24
 \BOOKMARK [2][-]{subsection.6.3}{ACO and surrogate models}{section.6}% 25
 \BOOKMARK [2][-]{subsection.6.4}{Parameter adaptation}{section.6}% 26
-\BOOKMARK [1][-]{section.7}{Existing ACO framework}{}% 27
-\BOOKMARK [1][-]{section.8}{IRACE automatic configuration}{}% 28
+\BOOKMARK [1][-]{section.7}{Existing ACO framework \(5 pages\)}{}% 27
+\BOOKMARK [1][-]{section.8}{IRACE automatic configuration \(3 pages\)}{}% 28
 \BOOKMARK [1][-]{section.9}{Conclusions}{}% 29

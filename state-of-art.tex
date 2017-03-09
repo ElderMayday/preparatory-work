@@ -4,6 +4,7 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{mdframed}
+\usepackage{tabto}
 \author{Aldar Saranov}
 \date{\today}
 \title{Development of an automatically configurable ant colony optimization framework. State of art.}
@@ -15,6 +16,12 @@
   skipbelow=\topsep,
 ]{definition}
 
+\newmdenv[
+  backgroundcolor=white!20,
+  frametitle=Algorithm,
+  skipabove=\topsep,
+  skipbelow=\topsep,
+]{algorithm}
 
 %-----------------------------------------------------
 
@@ -30,34 +37,16 @@
 Some animal species show an extreme degree of social organization. Such species (e.g. ants) have pheromone production and detection body parts and therefore seize an ability to communicate between each other in indirect way. This concept has inspired the development of algorithms which are based on social behavior of population called ant colony optimization algorithms (ACO). These algorithms allow to solve NP-hard problems in a very efficient manner. Since these algorithms are considered metaheuristic the development of a ACO framework is the next step of formalizing of this area is to provide tools for resolving general optimization problems. This article gives the brief overview of the current ACO research area state, existing framework description and some tools which can be used for the framework automatic configuration.
 \end{abstract}
 
-\section{Introduction}
+
+
+\section{Introduction (1 page)}
 Section descriptions.
 Heuristic information.
 Pheromones.
 Constructive heuristics.
 
-\section{Combinatorial Optimization Problems and Constructive
-Heuristics}
-
-
-\begin{definition}
-	\underline{Optimization Problem} is a tuple ($\phi,\omega, f$), where
-	\begin{itemize}
-		\item{$\phi$ is a \underline{search space} consisting of all possible assignments of discrete variables $x_i$, with $i=1,...,n$ }
-		\item{$\omega$ is a set of constraints for the decision variables}
-		\item{$f:\phi \to R$ is an objective function which has to be optimized}
-	\end{itemize}
-\end{definition}
-
-
-TSP and QAP description.
-Solution components.
-Feasible solution
-
-
-\section{The ACO Algorithmic Framework}
-
-ACO algorithm.
+\input{section-2}
+\input{section-3}
 
 \subsection{Choice of pheromone trails and heuristic information}
 
@@ -106,9 +95,9 @@ for the TSP and QAP}
 
 \subsection{Parameter adaptation}
 
-\section{Existing ACO framework}
+\section{Existing ACO framework (5 pages)}
 
-\section{IRACE automatic configuration}
+\section{IRACE automatic configuration (3 pages)}
 
 \section{Conclusions}
 

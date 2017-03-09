@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  9 MAR 2017 00:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  9 MAR 2017 23:39
 entering extended mode
 **./state-of-art.tex
 (state-of-art.tex
@@ -444,39 +444,44 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count148
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(state-of-art.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tabto\tabto.sty"
+Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
+\CurrentLineWidth=\dimen145
+) (state-of-art.aux)
 \openout1 = `state-of-art.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 21.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package hyperref Info: Link coloring OFF on input line 28.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count149
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (state-of-art.out) (state-of-art.out)
 \@outlinefile=\write3
@@ -486,21 +491,21 @@ LaTeX Info: Redefining \nameref on input line 21.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count150
-\scratchdimen=\dimen145
+\scratchdimen=\dimen146
 \scratchbox=\box50
 \nofMPsegments=\count151
 \nofMParguments=\count152
 \everyMPshowfont=\toks17
 \MPscratchCnt=\count153
-\MPscratchDim=\dimen146
+\MPscratchDim=\dimen147
 \MPnumerator=\count154
 \makeMPintoPDFobject=\count155
 \everyMPtoPDFconversion=\toks18
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 24.
+(Font)              <14.4> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 31.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (state-of-art.toc
@@ -525,48 +530,48 @@ ms
 \tf@toc=\write4
 \openout4 = `state-of-art.toc'.
 
- [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
+ [2] [3] (section-2.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
- [4]
-Overfull \hbox (14.29762pt too wide) in paragraph at lines 80--80
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+) (section-3.tex [4])
+Overfull \hbox (14.29762pt too wide) in paragraph at lines 69--69
 []\OT1/cmr/bx/n/14.4 ACO al-go-rithms as in-stan-ti-a-tions of the ACO Meta-
  []
 
 
-Overfull \hbox (6.89363pt too wide) in paragraph at lines 89--89
+Overfull \hbox (6.89363pt too wide) in paragraph at lines 78--78
 []\OT1/cmr/bx/n/17.28 Applications of ACO to other prob-lem types 
  []
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 117.
+LaTeX Warning: Empty `thebibliography' environment on input line 106.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
 [5] [6]
 Overfull \vbox (259.68343pt too high) has occurred while \output is active []
 
 
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (state-of-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `state-of-art.out' has not changed.
-(rerunfilecheck)             Checksum: D111F7E974783D0CB0CBABED1C3DB553;2218.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+(rerunfilecheck)             Checksum: 26AAC69A88F8A18B921C155BBCF4BDFA;2266.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 14624 strings out of 493333
- 261977 string characters out of 3139195
- 329746 words of memory out of 3000000
- 18066 multiletter control sequences out of 15000+200000
+ 14655 strings out of 493333
+ 262453 string characters out of 3139195
+ 331235 words of memory out of 3000000
+ 18087 multiletter control sequences out of 15000+200000
  9416 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,44p,10425b,334s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,6n,44p,10421b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
@@ -575,7 +580,7 @@ nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
-Output written on state-of-art.pdf (7 pages, 129435 bytes).
+Output written on state-of-art.pdf (7 pages, 130821 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
