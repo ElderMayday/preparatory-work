@@ -41,18 +41,66 @@ Some animal species show an extreme degree of social organization. Such species 
 
 \section{Introduction (1 page)}
 Section descriptions.
-Heuristic information.
 Pheromones.
 Constructive heuristics.
+Solution components.
+Problem models.
 
 \input{section-2}
 \input{section-3}
 
 \subsection{Choice of pheromone trails and heuristic information}
 
+$C$ - Solution components. \\
+$\tau_c \in T$ - pheromones of choosing. \\
+$\tau'_c \in T'$ - pheromones of considering order. \\
+$\pi$ - candidate solution. \\
+$\eta_c \in H$ - heuristic information (constant in time). \\
+
 \subsection{Solution construction}
 
+A solution is constructed by an ant. \\
+Probabilistic rules: \\
+\begin{itemize}
+\item {Classic}
+\item {Maniezzo}
+\item {Dorigo}
+\end{itemize}
+
+$\alpha, \beta$ - choice parameters.
+
+Extensions:
+\begin{itemize}
+\item {Lookahead - pick several components at once[94]}
+\item {Candidate list - restriction of component choice at each step[33,34]}
+\item {Iterated greedy (partial deconstruction)[110]}
+\item {With external memory[1]}
+\item {Iterated ants[129]}
+\item {Cunning ants[128]}
+\item {Enhanced ACO[47]}
+\end{itemize}
+
 \subsection{Global pheromone update}
+Evaporation \\
+$\tau_{new}=evaporation(\tau_{old}, \rho, S^{eva})$ \\
+$\rho$ - evaporation rate \\
+$S^{eva}$ - chosen solutions for evaporation \\ \\
+
+Deposition \\
+$w_k$ - weight of solution $s_k$. \\
+$F(S_k)$ - non-decreasing solution quality scaling function. \\ \\
+
+Update selection
+\begin{enumerate}
+\item {Ant system (update all)}
+\item {Single update selections:}
+\begin{enumerate}
+\item {iteration-based update}
+\item {global-based update}
+\item {restart-based update}
+\end{enumerate}
+\end{enumerate}
+
 
 \subsection{Pheromone update schedule}
 
