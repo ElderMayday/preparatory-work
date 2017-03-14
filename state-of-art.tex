@@ -23,9 +23,13 @@
   skipbelow=\topsep,
 ]{algorithm}
 
+\newcommand{\dd}[1]{\mathrm{d}#1}
+
 %-----------------------------------------------------
 
 \begin{document}
+
+
 
 \maketitle 
 \newpage
@@ -81,16 +85,16 @@ Extensions:
 \end{itemize}
 
 \subsection{Global pheromone update}
-Evaporation \\
+Evaporation: \\
 $\tau_{new}=evaporation(\tau_{old}, \rho, S^{eva})$ \\
 $\rho$ - evaporation rate \\
 $S^{eva}$ - chosen solutions for evaporation \\ \\
 
-Deposition \\
+Deposition: \\
 $w_k$ - weight of solution $s_k$. \\
 $F(S_k)$ - non-decreasing solution quality scaling function. \\ \\
 
-Update selection
+Update selection:
 \begin{enumerate}
 \item {Ant system (update all)}
 \item {Single update selections:}
@@ -101,27 +105,35 @@ Update selection
 \end{enumerate}
 \end{enumerate}
 
+Update extensions: \\
+\begin{enumerate}
+\item {Max-Min Ant System [122]}
+\item {Rank-based Ant System [19]}
+\item {Best-Worst Ant System [21]}
+\item {Elitist Ant System [30, 36, 38]}
+\end{enumerate}
 
 \subsection{Pheromone update schedule}
+Exploration vs exploitation.
 
 \subsection{Initialization of pheromones}
 
+
 \subsection{Pheromone reinitialization}
 
+
 \subsection{Local pheromone update}
+Parallel vs sequential.
+ACS [34]
 
 \subsection{Pheromone limits}
+MMAS and ACS examples.
 
 \subsection{Local search}
+Neighborhood operator.
+Best-improving and first-improving.
 
 \subsection{ACO algorithms as instantiations of the ACO Metaheuristc}
-
-\section{ACOTSP/ACOQAP: A unified framework of ACO algorithms
-for the TSP and QAP}
-
-\subsection{Finding a better ACO configuration for the TSP}
-
-\subsection{Finding a better ACO configuration for the QAP}
 
 \section{Applications of ACO to other problem types}
 
@@ -144,6 +156,10 @@ for the TSP and QAP}
 \subsection{Parameter adaptation}
 
 \section{Existing ACO framework (5 pages)}
+
+\subsection{Finding a better ACO configuration for the TSP}
+
+\subsection{Finding a better ACO configuration for the QAP}
 
 \section{IRACE automatic configuration (3 pages)}
 

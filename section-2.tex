@@ -1,6 +1,8 @@
 \section{Combinatorial Optimization Problems and Constructive
 Heuristics (17 pages)}
 
+Combinatorial optimization problems (COP) are a whole class of mathematical optimization problems. These problems can be described by grouping, ordering, assigning or any other operations over the set of discrete objects. In practice one may need to resolve COP which have a large number of extra constraints for the solutions which are considered admissible. Many of these problems which are being thoroughly researched at the moment belong to NP-complete discrete optimization problems.
+
 \begin{definition}
 	\underline{Optimization Problem} is a tuple ($\Phi,\omega, f$), where
 	\begin{itemize}
@@ -9,6 +11,15 @@ Heuristics (17 pages)}
 		\item{$f:\Phi \to R$ is an \underline{objective function} which has to be optimized}
 	\end{itemize}
 \end{definition}
+
+The problem describes the abstract subclass of tasks (e.g. find the minimum spanning tree of some graph) while the instance of a problem describes a certain practical problem (e.g. find the minimum spanning tree of a given graph G). The objective function in this case is the sum of the selected edges. \\
+One of the most frequently encountered problems is traveling salesman problem (TSP). Given a graph $G=(N,E)$ with $n=|N|$ nodes, where $E$ - is a set of edges fully connecting the nodes and distances $d_{ij}, \forall(i,j) \in E$ one should find a Hamiltonian path of minimal length (in terms of sum of the weighted edges). The solution path can be represented as $\pi=(\pi_1,...,\pi_n)^t$ of all n nodes, where $pi_i$ is the node index at position i. The objective function is following
+
+\begin{equation}
+\min \limits_{\pi \in \Phi} {d_{\pi_i \pi_{i+1}}} + \sum \limits_{i+1}^{n-1} {d_{\pi_i \pi_{i+1}}}
+\end{equation}
+
+Thus $\pi$ forms a permutation space and every permutation of $\pi$ gives a admissible (but not necessarily optimal) solution. Plus it is obvious that the absolute position in the permutation sequence does not affect the value of the objective function but the relative one.
 
 TSP and QAP description.
 Solution components.
