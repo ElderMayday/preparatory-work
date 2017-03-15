@@ -1,7 +1,7 @@
 \section{Combinatorial Optimization Problems and Constructive
 Heuristics (17 pages)}
 
-Combinatorial optimization problems (COP) are a whole class of mathematical optimization problems. These problems can be described by grouping, ordering, assigning or any other operations over the set of discrete objects. In practice one may need to resolve COP which have a large number of extra constraints for the solutions which are considered admissible. Many of these problems which are being thoroughly researched at the moment belong to NP-complete discrete optimization problems.
+Combinatorial optimization problems (COP) are a whole class of mathematical optimization problems. These problems can be described by grouping, ordering, assigning or any other operations over the set of discrete objects. In practice one may need to resolve COP which have a large number of extra constraints for the solutions which are considered admissible. Many of these problems which are being thoroughly researched at the moment belong to NP-complete discrete optimization problems. NP-complete problem informally means that we cannot decompose a large instance of such problems into a smaller one. Algorithms solving such problems take time larger than polynomial (e.g. exponential).
 
 \begin{definition}
 	\underline{Optimization Problem} is a tuple ($\Phi,\omega, f$), where
@@ -13,7 +13,7 @@ Combinatorial optimization problems (COP) are a whole class of mathematical opti
 \end{definition}
 
 The problem describes the abstract subclass of tasks (e.g. find the minimum spanning tree of some graph) while the instance of a problem describes a certain practical problem (e.g. find the minimum spanning tree of a given graph G). The objective function in this case is the sum of the selected edges. \\
-One of the most frequently encountered problems is traveling salesman problem (TSP). Given a graph $G=(N,E)$ with $n=|N|$ nodes, where $E$ - is a set of edges fully connecting the nodes and distances $d_{ij}, \forall(i,j) \in E$ one should find a Hamiltonian path of minimal length (in terms of sum of the weighted edges). The solution path can be represented as $\pi=(\pi_1,...,\pi_n)^t$ of all n nodes, where $pi_i$ is the node index at position i. The objective function is following
+One of the most frequently encountered problems is traveling salesman problem (TSP). Given a graph $G=(N,E)$ with $n=|N|$ nodes, where $E$ - is a set of edges fully connecting the nodes and distances $d_{ij}, \forall(i,j) \in E$ one should find a Hamiltonian path of minimal length (in terms of sum of the weighted edges). The solution path can be represented as $\pi=(\pi_1,...,\pi_n)^t$ of all n nodes, where $pi_i$ is the node index at position i. The optimal value of the objective function is
 
 \begin{equation}
 \min \limits_{\pi \in \Phi} {d_{\pi_i \pi_{i+1}}} + \sum \limits_{i+1}^{n-1} {d_{\pi_i \pi_{i+1}}}
@@ -21,7 +21,20 @@ One of the most frequently encountered problems is traveling salesman problem (T
 
 Thus $\pi$ forms a permutation space and every permutation of $\pi$ gives a admissible (but not necessarily optimal) solution. Plus it is obvious that the absolute position in the permutation sequence does not affect the value of the objective function but the relative one.
 
-TSP and QAP description.
-Solution components.
-Feasible solution.
-Permutation space.
+In addition to TSP the quadratic assignment problem (QAP) was deeply researched. In QAP there is a set of $n$ locations and a set of $n$ facilities which are connected with $n \times n$ flows. The objective function is represented as the sum of paired production of distances between $i$ and $j$ locations and specified flows between $\pi_i$ and $\pi_j$ assigned flows. An instance of the problem is given $n \times n$ matrices $d_{ij}$ and $f_{ij}$ with $i, j = 1,...,n$. A solution of QAP is assignment of the facilities to the locations represented by permutation $\pi$ where $\pi_i$ depicts assignment of the corresponding facility to the location $i$.
+
+\begin{equation}
+\min \limits_{\pi \in \Phi} \sum \limits_{i=1}^n \sum \limits_{j=1}^n {d_{ij} \times f_{\pi_i \pi_j}}
+\end{equation}
+
+Solution components are normally defined in the terms of COP. Solution components $C={c_1,c_2,...}$ is a set, subset of which corresponds to one solution of the given problem (if also fulfills the constrains). Solutions that fulfill all the constraints are also called \emph{feasible solutions}. In case of TSP solution components are the edges $(i,j)$ of the given graph. In case of QAP solution components are all the possible assignments of every location $i$ to every facility $j$. In order to provide the feasible solutions the algorithm must either to operate completely in the feasible candidate solution space or to bias towards the feasible ones with final constraint checking. \\
+
+Since solving of such problems by using provably optimal solutions is unreasonable one can apply heuristic algorithms which more or less provide solutions with relatively good fitness consuming reasonable quantity of resources (time/power, memory etc.). \\
+
+An essential way in such cases is using of constructive heuristics. Constructive heuristics starts with an empty or partially built solution and is being completed by iterated extension until finished. Each of the iterations adds one or several solution components to the solution. For example greedy constructive heuristics algorithm adds best-ranked component and therefore provides high level of exploiting. \\
+
+In application to the TSP problem \emph{nearest neighbor} heuristic is used. The algorithm starts from random node $i$ with initial $pi=<>$, at each step it selects the solution component with the minimal distance $d_{ij}$ and adds the corresponding $\pi_1=i$ and $\pi_2=j$ components to the solution. \\
+
+In application to QAP one tends to place the facilities at the locations that are more "central". The algorithm computes $f=(f_1,...,f_n)^t$ where $f_i=\sum \limits_{j=1}^n {f_{ij}}$ and $d=(d_1,...,d_n)^t$ where $d_k=\sum \limits_{l=1}^n {d_{kl}}$. Later on the algorithm assigns the facilities with the largest $f_i$ to the locations with smallest $d_k$. \\
+
+Generally heuristic values are assigned constants, however in extensions one can use heuristics which is a function of the generated partial solution as input. This is called \emph{adaptive} heuristics and normally it consumes larger computer resources although leads to better quality of the solutions.
