@@ -1,5 +1,13 @@
 \section{The Concepts of Ant Colony Optimization}
 
+ACO algorithms are a subclass of construction heuristics algorithms. The meta-heuristic features of these algorithms.
+
+\begin{itemize}
+\item ACO algorithm is a population-based algorithm. Solutions are being generated at each iteration.
+\item Solutions are being generated according to probability-based mechanism which is biased by pheromone assignment to the solution components.
+\item The quality of the generated solutions affect the pheromones are updated during the run of the algorithms.
+\end{itemize}
+
 \begin{algorithm}
 \begin{tabbing}
 \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \\
@@ -17,3 +25,12 @@
 \textbf{end}
 \end{tabbing}
 \end{algorithm}
+
+Several ants generate the solutions by iterative approach. After this an optional local solution search is applied. After those pheromone evaporation and deposition is done. Evaporation helps to reduce the convergence-prone behavior of the algorithm. Deposition is the part where the solutions affect the pheromone values in order to bias the future solutions.
+
+
+
+
+
+
+

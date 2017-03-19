@@ -53,11 +53,15 @@ Problem models.
 
 \subsection{Choice of pheromone trails and heuristic information}
 
+Generally there are two mechanisms of biasing the solution production - pheromones and heuristic values. \\
+Hereby we introduce the following components: \\
 $C$ - Solution components. \\
 $\tau_c \in T$ - pheromones of choosing. \\
 $\tau'_c \in T'$ - pheromones of considering order. \\
 $\pi$ - candidate solution. \\
 $\eta_c \in H$ - heuristic information (constant in time). \\
+
+Higher values of $\tau_c$ stand for higher probability of that the component $c$ will be added to the solution.
 
 \subsection{Solution construction}
 

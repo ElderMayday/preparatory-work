@@ -1,28 +1,28 @@
 \contentsline {section}{\numberline {1}Introduction (1 page)}{3}{section.1}
 \contentsline {section}{\numberline {2}Combinatorial Optimization Problems and Constructive Heuristics (17 pages)}{3}{section.2}
 \contentsline {section}{\numberline {3}The Concepts of Ant Colony Optimization}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Choice of pheromone trails and heuristic information}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Solution construction}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Global pheromone update}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.1}Choice of pheromone trails and heuristic information}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Solution construction}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Global pheromone update}{8}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Pheromone update schedule}{8}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Initialization of pheromones}{8}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Pheromone reinitialization}{8}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Local pheromone update}{8}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Pheromone limits}{8}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Local search}{8}{subsection.3.9}
-\contentsline {subsection}{\numberline {3.10}ACO algorithms as instantiations of the ACO Metaheuristc}{9}{subsection.3.10}
-\contentsline {section}{\numberline {4}Applications of ACO to other problem types}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Continuous Optimization Problems}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Multi-objective problems}{9}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Dynamic problems}{9}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Stochastic problems}{9}{subsection.4.4}
-\contentsline {section}{\numberline {5}ACO in combination with other methods}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}ACO and tree search methods}{9}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}ACO and exact methods}{9}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}ACO and surrogate models}{9}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Parameter adaptation}{9}{subsection.5.4}
-\contentsline {section}{\numberline {6}Existing ACO framework (5 pages)}{9}{section.6}
-\contentsline {subsection}{\numberline {6.1}Finding a better ACO configuration for the TSP}{9}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Finding a better ACO configuration for the QAP}{9}{subsection.6.2}
-\contentsline {section}{\numberline {7}IRACE automatic configuration (3 pages)}{9}{section.7}
-\contentsline {section}{\numberline {8}Conclusions}{9}{section.8}
+\contentsline {subsection}{\numberline {3.5}Initialization of pheromones}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Pheromone reinitialization}{9}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Local pheromone update}{9}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Pheromone limits}{9}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Local search}{9}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}ACO algorithms as instantiations of the ACO Metaheuristc}{10}{subsection.3.10}
+\contentsline {section}{\numberline {4}Applications of ACO to other problem types}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Continuous Optimization Problems}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Multi-objective problems}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Dynamic problems}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Stochastic problems}{10}{subsection.4.4}
+\contentsline {section}{\numberline {5}ACO in combination with other methods}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}ACO and tree search methods}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}ACO and exact methods}{10}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}ACO and surrogate models}{10}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Parameter adaptation}{10}{subsection.5.4}
+\contentsline {section}{\numberline {6}Existing ACO framework (5 pages)}{10}{section.6}
+\contentsline {subsection}{\numberline {6.1}Finding a better ACO configuration for the TSP}{10}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Finding a better ACO configuration for the QAP}{10}{subsection.6.2}
+\contentsline {section}{\numberline {7}IRACE automatic configuration (3 pages)}{10}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{10}{section.8}
