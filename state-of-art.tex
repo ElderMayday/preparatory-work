@@ -5,6 +5,7 @@
 \usepackage{xcolor}
 \usepackage{mdframed}
 \usepackage{tabto}
+\usepackage{amsmath}
 \author{Aldar Saranov}
 \date{\today}
 \title{Development of an automatically configurable ant colony optimization framework. State of art.}
@@ -24,6 +25,7 @@
 ]{algorithm}
 
 \newcommand{\dd}[1]{\mathrm{d}#1}
+
 
 %-----------------------------------------------------
 
@@ -61,19 +63,41 @@ $\tau'_c \in T'$ - pheromones of considering order. \\
 $\pi$ - candidate solution. \\
 $\eta_c \in H$ - heuristic information (constant in time). \\
 
-Higher values of $\tau_c$ stand for higher probability of that the component $c$ will be added to the solution.
+Higher values of $\tau_c$ stand for higher probability of that the component $c$ will be added to the solution. Additional problem-specific pheromones as $tau'_c$ are used for auxiliary purposes (e.g. desirability of considering of one facility after another in QAP). Heuristic information $H$ is similar to the pheromone trails however it is not updated during the algorithm execution ($\forall c \in C, \exists \eta_c \in H$). Those are either constant values or values which depend on the current partially constructed solution.
 
-\subsection{Solution construction}
+\subsection{Solution component choice}
 
-A solution is constructed by an ant. \\
-Probabilistic rules: \\
-\begin{itemize}
-\item {Classic}
-\item {Maniezzo}
-\item {Dorigo}
-\end{itemize}
+Solution construction phase as says the name yields a new solution set. Each ant starts with an empty solution $s$. Each ant produces may produce one solution at one run. At each step one solution component is added. The probability of $c_j$ to be added at certain step can be calculated by different techniques (i.e. $Pr(c_j|T,H,s)$). Frequently used rule is defined as follows:
 
-$\alpha, \beta$ - choice parameters.
+\begin{equation}
+Pr(c_j)=\frac{t_j^\alpha \times \eta_j^\beta}{\sum \limits_{c_k \in N_i} t_k^\alpha \times \eta_k^\beta} \forall c_j \in N_i
+\label{eq:construction_classic}
+\end{equation}
+
+$\alpha$ and $\beta$ are the parameters which determine the impact of the pheromone trails and heuristic information on the final probability. Another alternative has been proposed by Maniezzo [82,83] which combines the pheromone trails and heuristic information in a linear way.
+
+\begin{equation}
+Pr(c_j)=\frac{\alpha \times \tau_j + (1-\alpha) \times \eta_j}{\sum \limits_{c_k \in N_i} \alpha \times \tau_k + (1-\alpha) \times \tau_k} \forall c_j \in N_i
+\end{equation}
+
+Since it does not use exponentiation operations this algorithm is preferable for performance-targeted frameworks. However this algorithm may cause undesired biases if the range of the values are not taken into account. The third alternative is invented by Dorigo and Gambardella [34] with Ant Colony System (ACS) algorithm. This algorithm is also called pseudo-random proportional rule. A random uniform value $q$ is generated at range $[0;1)$ and if $q>q_0$ where $q_0$ is a predefined parameter then probability is being calculated according to the formula \eqref{eq:construction_classic}. Otherwise the solution component is picked as:
+
+\begin{equation}
+c_j = \operatornamewithlimits{argmax}\limits_{c_k \in N_i} t_k^\alpha \times \eta_k^\beta
+\label{eq:construction_dorigo}
+\end{equation}
+
+Apparently larger $q_0$ gives more greedy choice.
+
+\subsection{Construction extensions}
+
+\textbf{Lookahead} conception was introduced. Is says that at each decision step several solution components should be considered at once in order to get the next solution component. Generally it is worth to be implemented when the cost of making a local prediction based on the current partial solution state is much lower than the cost of the real execution of the move sequence.
+
+\textbf{Candidate list} restricts the solution component set to a smaller set to be considered. The solution components in this list have to be the most promising at the current step. Usually this approach yields a significant gain depending on the initial set-up (i.e. if this list is precalculated once before the run). Nonetheless it can also depend on the current partial solution. For TSP it is represented as nearest neighbor list for each of the cities.
+
+\textbf{Hash table} of pheromone trails. It allows to efficiently save memory when the updated pheromone trails are is a sparse set in comparison to the set of all solution components. Search and updating of the elements of the hash-table is expected to be done within linear time.
+
+\textbf{Heuristic precomputation} of the values $t_j^\alpha \times \eta_j^\beta$ for each of the solution components which are used in \eqref{eq:construction_dorigo}.
 
 Extensions:
 \begin{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  19 MAR 2017 04:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  25 MAR 2017 19:05
 entering extended mode
 **./state-of-art.tex
 (state-of-art.tex
@@ -447,41 +447,98 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tabto\tabto.sty"
 Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
 \CurrentLineWidth=\dimen145
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip117
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen146
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen147
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count149
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count150
+\leftroot@=\count151
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count152
+\DOTSCASE@=\count153
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box49
+\strutbox@=\box50
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count154
+\c@MaxMatrixCols=\count155
+\dotsspace@=\muskip17
+\c@parentequation=\count156
+\dspbrk@lvl=\count157
+\tag@help=\toks18
+\row@=\count158
+\column@=\count159
+\maxfields@=\count160
+\andhelp@=\toks19
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks20
+\multlinegap=\skip118
+\multlinetaggap=\skip119
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 ) (state-of-art.aux)
 \openout1 = `state-of-art.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 30.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+\AtBeginShipoutBox=\box51
+Package hyperref Info: Link coloring OFF on input line 32.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count149
+\c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (state-of-art.out) (state-of-art.out)
 \@outlinefile=\write3
@@ -490,23 +547,18 @@ LaTeX Info: Redefining \nameref on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count150
-\scratchdimen=\dimen146
-\scratchbox=\box50
-\nofMPsegments=\count151
-\nofMParguments=\count152
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count153
-\MPscratchDim=\dimen147
-\MPnumerator=\count154
-\makeMPintoPDFobject=\count155
-\everyMPtoPDFconversion=\toks18
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 33.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 33.
- [1
+\scratchcounter=\count162
+\scratchdimen=\dimen155
+\scratchbox=\box52
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count165
+\MPscratchDim=\dimen156
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks23
+) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (state-of-art.toc
 Overfull \hbox (18.38861pt too wide) in paragraph at lines 2--2
@@ -514,12 +566,6 @@ Overfull \hbox (18.38861pt too wide) in paragraph at lines 2--2
 tive Heuris- 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
 )
 \tf@toc=\write4
 \openout4 = `state-of-art.toc'.
@@ -558,71 +604,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
  []
 
 ) (section-3.tex [5])
-Underfull \hbox (badness 10000) in paragraph at lines 56--63
+Underfull \hbox (badness 10000) in paragraph at lines 58--65
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--94
+[6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--94
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
  []
 
-[8]
-Overfull \hbox (14.29762pt too wide) in paragraph at lines 138--138
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[9]
+Overfull \hbox (14.29762pt too wide) in paragraph at lines 162--162
 []\OT1/cmr/bx/n/14.4 ACO al-go-rithms as in-stan-ti-a-tions of the ACO Meta-
  []
 
 
-Overfull \hbox (6.89363pt too wide) in paragraph at lines 140--140
+Overfull \hbox (6.89363pt too wide) in paragraph at lines 164--164
 []\OT1/cmr/bx/n/17.28 Applications of ACO to other prob-lem types 
  []
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 172.
+LaTeX Warning: Empty `thebibliography' environment on input line 196.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
-[9] [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
+[10] [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
  (state-of-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
 Package rerunfilecheck Info: File `state-of-art.out' has not changed.
-(rerunfilecheck)             Checksum: 12BFB366C401C05FB771F83242BB71A0;2167.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
+(rerunfilecheck)             Checksum: 3A70B028B39A75B60C4EB160DC1605CF;2246.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 14670 strings out of 493333
- 262553 string characters out of 3139195
- 330243 words of memory out of 3000000
- 18088 multiletter control sequences out of 15000+200000
- 9763 words of font info for 34 fonts, out of 3000000 for 9000
+ 15265 strings out of 493333
+ 269347 string characters out of 3139195
+ 340865 words of memory out of 3000000
+ 18660 multiletter control sequences out of 15000+200000
+ 10888 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,48p,10421b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,6n,48p,10421b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -636,9 +677,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-art.pdf (10 pages, 203938 bytes).
+Output written on state-of-art.pdf (11 pages, 212226 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
