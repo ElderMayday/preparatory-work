@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  27 MAR 2017 01:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  27 MAR 2017 19:17
 entering extended mode
 **./state-of-art.tex
 (state-of-art.tex
@@ -619,24 +619,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
  []
 
 [10]
-Overfull \hbox (6.19763pt too wide) in paragraph at lines 208--208
-[]\OT1/cmr/bx/n/14.4 ACO al-go-rithms as in-stan-ti-a-tions of the ACO Meta-
+Overfull \hbox (15.2708pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/12 For sake of mak-ing the be-hav-ior more ex-ploratory one can ap
+-ply lo-cal pheromone
+ []
+
+[11]
+Overfull \hbox (6.89363pt too wide) in paragraph at lines 227--227
+[]\OT1/cmr/bx/n/17.28 Applications of ACO to other prob-lem types
  []
 
 
-Overfull \hbox (6.89363pt too wide) in paragraph at lines 210--210
-[]\OT1/cmr/bx/n/17.28 Applications of ACO to other prob-lem types 
- []
+LaTeX Warning: Empty `thebibliography' environment on input line 251.
 
-
-LaTeX Warning: Empty `thebibliography' environment on input line 242.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
-[11] [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
+[12] [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
  (state-of-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 
 
 Package rerunfilecheck Warning: File `state-of-art.out' has changed.
@@ -644,23 +645,35 @@ Package rerunfilecheck Warning: File `state-of-art.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `state-of-art.out':
-(rerunfilecheck)             Before: 9BB639A80E71CFB9962B2A47B8BD4543;2246
-(rerunfilecheck)             After:  287A74AB05B2F7CA5E55587A83FAFD26;2112.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
+(rerunfilecheck)             Before: 287A74AB05B2F7CA5E55587A83FAFD26;2112
+(rerunfilecheck)             After:  8AF72F8353F7D1636FC3D1BD211BDAAC;1718.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
- 15275 strings out of 493333
- 269453 string characters out of 3139195
+ 15276 strings out of 493333
+ 269443 string characters out of 3139195
  340865 words of memory out of 3000000
- 18662 multiletter control sequences out of 15000+200000
+ 18660 multiletter control sequences out of 15000+200000
  11589 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,9n,48p,10421b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.3.11} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{section.8} has been referenced but does not exist
+, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.3.10} has been referenced but does not e
-xist, replaced by a fixed one
+pdfTeX warning (dest): name{subsection.6.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.9} has been referenced but does not ex
+ist, replaced by a fixed one
 
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
@@ -675,9 +688,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-art.pdf (12 pages, 226073 bytes).
+Output written on state-of-art.pdf (13 pages, 228267 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 

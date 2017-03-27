@@ -9,19 +9,14 @@
 \BOOKMARK [2][-]{subsection.3.6}{Local pheromone update}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.7}{Pheromone limits}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.8}{Local search}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.9}{ACO algorithms as instantiations of the ACO Metaheuristc}{section.3}% 12
-\BOOKMARK [1][-]{section.4}{Applications of ACO to other problem types}{}% 13
-\BOOKMARK [2][-]{subsection.4.1}{Continuous Optimization Problems}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.2}{Multi-objective problems}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.3}{Dynamic problems}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.4}{Stochastic problems}{section.4}% 17
-\BOOKMARK [1][-]{section.5}{ACO in combination with other methods}{}% 18
-\BOOKMARK [2][-]{subsection.5.1}{ACO and tree search methods}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.2}{ACO and exact methods}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.3}{ACO and surrogate models}{section.5}% 21
-\BOOKMARK [2][-]{subsection.5.4}{Parameter adaptation}{section.5}% 22
-\BOOKMARK [1][-]{section.6}{Existing ACO framework \(5 pages\)}{}% 23
-\BOOKMARK [2][-]{subsection.6.1}{Finding a better ACO configuration for the TSP}{section.6}% 24
-\BOOKMARK [2][-]{subsection.6.2}{Finding a better ACO configuration for the QAP}{section.6}% 25
-\BOOKMARK [1][-]{section.7}{IRACE automatic configuration \(3 pages\)}{}% 26
-\BOOKMARK [1][-]{section.8}{Conclusions}{}% 27
+\BOOKMARK [1][-]{section.4}{Applications of ACO to other problem types \(1 page\)}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Continuous Optimization Problems}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Multi-objective problems}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Dynamic problems}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.4}{Stochastic problems}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Existing ACO framework \(5 pages\)}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Finding a better ACO configuration for the TSP}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Finding a better ACO configuration for the QAP}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{IRACE automatic configuration \(3 pages\)}{}% 20
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{Possible improvements}{section.7}% 22
