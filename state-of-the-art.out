@@ -10,13 +10,9 @@
 \BOOKMARK [2][-]{subsection.3.7}{Pheromone limits}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.8}{Local search}{section.3}% 11
 \BOOKMARK [1][-]{section.4}{Applications of ACO to other problem types \(1 page\)}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Continuous Optimization Problems}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Multi-objective problems}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.3}{Dynamic problems}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.4}{Stochastic problems}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Existing ACO framework \(5 pages\)}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Finding a better ACO configuration for the TSP}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Finding a better ACO configuration for the QAP}{section.5}% 19
-\BOOKMARK [1][-]{section.6}{IRACE automatic configuration \(3 pages\)}{}% 20
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 21
-\BOOKMARK [2][-]{subsection.7.1}{Possible improvements}{section.7}% 22
+\BOOKMARK [1][-]{section.5}{Existing ACO framework \(5 pages\)}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Finding a better ACO configuration for the TSP}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Finding a better ACO configuration for the QAP}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Automatic configuration in IRACE \(3 pages\)}{}% 16
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 17
+\BOOKMARK [2][-]{subsection.7.1}{Possible improvements}{section.7}% 18

@@ -1,0 +1,12 @@
+\section{Applications of ACO to other problem types (1 page)}
+ACO algorithm can be applied to other problem types either directly or by approximated way.
+
+\begin{itemize}
+\item \textbf{Continuous Optimization Problems}. Simplest way is to approximate the problem to its discrete analogue, however it cannot be applied to certain problems. Some adaptations are carried out by Socha and Dorigo [113]. Another model was presented by Liao[72, 74].
+
+\item \textbf{Multi-objective problems} are the problems that have several defined objective functions either have a deterministic preference model or demand the Pareto set as the solution. Several algorithms for resolving such problems were reviewed in the paper of López-Ibáñez and Stützle [77]. There are two common ways: maximizing of each of objectives (COMPETants) or finding non-dominated solutions (BicreterionAnt, MACS, mACO-3). TO-ELABORATE???
+
+\item \textbf{Dynamic problems} are the problems that have some information revealed during the execution. These problems are resolved in a strongly different manner - ants act asynchronously and no global pheromones are updated, instead specific update mechanisms are held.
+
+\item \textbf{Stochastic problems} deal with information that is not deterministic. Such problems as probabilistic TSP where for each city there is a given probability that it is required to visit.
+\end{itemize}
