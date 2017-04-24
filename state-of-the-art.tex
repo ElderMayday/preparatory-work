@@ -6,6 +6,10 @@
 \usepackage{mdframed}
 \usepackage{tabto}
 \usepackage{amsmath}
+\usepackage{graphicx}
+
+\graphicspath{{images/}}
+
 \author{Aldar Saranov}
 \date{\today}
 \title{Development of an automatically configurable ant colony optimization framework. State of the art.}
@@ -67,12 +71,71 @@ ACOTSP unified framework was developed by IRIDIA group. It was developed with te
 
 \section{Automatic configuration in IRACE (3 pages)}
 
+Automatic configuration is a process that optimizes the performance of a certain algorithm as a goal function based on input parameters of the algorithm. The general parameter types are:
+ 
+\begin{itemize}
+\item \textbf{categorical} parameters - define the choice of constructive procedure, choice of branching strategies (i. e. algorithmic blocs) and so on.
+\item \textbf{ordinal} parameters - define lower bounds, neighborhoods.
+\item \textbf{numerical} parameters - define integer or real values/constants such as weighting factors, population sizes, temperature. They can be optional according to different categorical parameter values.
+\end{itemize}
+
+
+\begin{figure}[htbp!]
+  \centering
+    \includegraphics[scale=0.7]{configuration-top-level.png}
+  \caption{Automatic configuration scheme}
+  \label{fig:autoconf}
+\end{figure}
+
+
+In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize).
+
+There are two application modes:
+\begin{itemize}
+\item Offline tuning - introduces a learning stage on training instances before learning on the actual set.
+\item Online tuning - tunes the parameters while solving the actual instance set.
+\end{itemize}
+
+A widely used configuration algorithmic family is racing algorithms. The simplified algorithm is as follows
+
+\begin{algorithm}
+\begin{tabbing}
+\hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \\
+\textbf{procedure} racing \\
+\> start with an initial candidate set $\Theta$ \\
+\> \textbf{repeat iterations $I$} \\
+\> \> process an instance stream \\
+\> \> evaluate the candidates sequentially \\
+\> \> remove inferior candidates \\
+\> \textbf{until} winner is selected or another exit condition fulfilled \\
+\textbf{end}
+\end{tabbing}
+\end{algorithm}
+
+
+
+\begin{figure}[htbp!]
+  \centering
+    \includegraphics[scale=1.2]{irace.jpg}
+  \caption{I-RACE execution illustration}
+  \label{fig:irace}
+\end{figure}
+
+
+The I-RACE (iterated race) implementation has already been applied for the ACO problem in \cite{iraceaac}
+
 \section{Conclusions}
 
 \subsection{Possible improvements}
 
+
 \begin{thebibliography}{1}
 
+
+  \bibitem{iraceaac} Manuel L{\'o}pez-Ib{\'a}{\~n}ez  and  J{\'e}r{\'e}mie Dubois-Lacoste  and Leslie {P{\'e}rez C{\'a}ceres}  and  Thomas St{\"u}tzle  and  Mauro Birattari {\em Iterated Racing for Automatic Algorithm Configuration} 2013: IRIDIA - Technical Report Series.
+
+
 \end{thebibliography}
+
 
 \end{document} 

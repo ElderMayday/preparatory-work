@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  29 MAR 2017 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  24 APR 2017 21:30
 entering extended mode
 **./state-of-the-art.tex
 (state-of-the-art.tex
@@ -506,29 +506,46 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+)
 (state-of-the-art.aux)
 \openout1 = `state-of-the-art.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 36.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -538,9 +555,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
 (state-of-the-art.out) (state-of-the-art.out)
 \@outlinefile=\write3
@@ -550,16 +567,28 @@ LaTeX Info: Redefining \nameref on input line 32.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count162
-\scratchdimen=\dimen155
+\scratchdimen=\dimen157
 \scratchbox=\box52
 \nofMPsegments=\count163
 \nofMParguments=\count164
 \everyMPshowfont=\toks22
 \MPscratchCnt=\count165
-\MPscratchDim=\dimen156
+\MPscratchDim=\dimen158
 \MPnumerator=\count166
 \makeMPintoPDFobject=\count167
 \everyMPtoPDFconversion=\toks23
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 ) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (state-of-the-art.toc
@@ -640,28 +669,42 @@ Missing character: There is no ± in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 [12])
-Overfull \hbox (12.34567pt too wide) in paragraph at lines 68--68
+Overfull \hbox (12.34567pt too wide) in paragraph at lines 72--72
 []\OT1/cmr/bx/n/17.28 Automatic con-fig-u-ra-tion in IRACE (3 pages) 
  []
 
+[13] <images/configuration-top-level.png, id=188, 452.69125pt x 347.2975pt>
+File: images/configuration-top-level.png Graphic file (type png)
 
-LaTeX Warning: Empty `thebibliography' environment on input line 76.
+<use images/configuration-top-level.png>
+Package pdftex.def Info: images/configuration-top-level.png used on input line 
+85.
+(pdftex.def)             Requested size: 316.88171pt x 243.10658pt.
+Package mdframed Info: Not enough space on this page on input line 113.
+ [14 <./images/configuration-top-level.png>]
+Package mdframed Info: Not enough space on this page on input line 113.
+ <images/irace.jpg, id=196, 140.70265pt x 168.84319pt>
+File: images/irace.jpg Graphic file (type jpg)
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
-[13] [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+<use images/irace.jpg>
+Package pdftex.def Info: images/irace.jpg used on input line 119.
+(pdftex.def)             Requested size: 168.8423pt x 202.6108pt.
+ [15 <./images/irace.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (state-of-the-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `state-of-the-art.out' has not changed.
 (rerunfilecheck)             Checksum: 12DF8C71855CFC328B882313AD88F673;1426.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 15261 strings out of 493333
- 269275 string characters out of 3139195
- 340877 words of memory out of 3000000
- 18651 multiletter control sequences out of 15000+200000
+ 15558 strings out of 493333
+ 273881 string characters out of 3139195
+ 344311 words of memory out of 3000000
+ 18919 multiletter control sequences out of 15000+200000
  11589 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,9n,48p,10425b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -678,9 +721,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-the-art.pdf (14 pages, 226223 bytes).
+Output written on state-of-the-art.pdf (16 pages, 277111 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
