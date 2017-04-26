@@ -7,6 +7,13 @@
 \usepackage{tabto}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{listings}
+
+\lstset{
+    frame=single,
+    breaklines=true,
+    postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
 
 \graphicspath{{images/}}
 
@@ -33,6 +40,8 @@
 
 %--------------------------------------------------------------------------------
 
+
+
 \begin{document}
 
 \maketitle 
@@ -44,6 +53,7 @@
 \begin{abstract}
 Some animal species show an extreme degree of social organization. Such species (e.g. ants) have pheromone production and detection body parts and therefore seize an ability to communicate between each other in indirect way. This concept has inspired the development of algorithms which are based on social behavior of population called ant colony optimization algorithms (ACO). These algorithms allow to solve NP-hard problems in a very efficient manner. Since these algorithms are considered metaheuristic the development of a ACO framework is the next step of formalizing of this area is to provide tools for resolving general optimization problems. This article gives the brief overview of the current ACO research area state, existing framework description and some tools which can be used for the framework automatic configuration.
 \end{abstract}
+
 
 
 
@@ -79,8 +89,7 @@ Automatic configuration is a process that optimizes the performance of a certain
 \item \textbf{numerical} parameters - define integer or real values/constants such as weighting factors, population sizes, temperature. They can be optional according to different categorical parameter values.
 \end{itemize}
 
-
-\begin{figure}[htbp!]
+\begin{figure}[H]
   \centering
     \includegraphics[scale=0.7]{configuration-top-level.png}
   \caption{Automatic configuration scheme}
@@ -90,6 +99,12 @@ Automatic configuration is a process that optimizes the performance of a certain
 
 In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize).
 
+Two conceptual approaches can be remarked:
+\begin{itemize}
+\item Top-down - develop a fixed template-based algorithm.
+\item Bottom-up - algorithm is build of flexible components with some rule restrictions. Often involves application of genetic programming and evolution ideas.
+\end{itemize}
+
 There are two application modes:
 \begin{itemize}
 \item Offline tuning - introduces a learning stage on training instances before learning on the actual set.
@@ -98,23 +113,24 @@ There are two application modes:
 
 A widely used configuration algorithmic family is racing algorithms. The simplified algorithm is as follows
 
-\begin{algorithm}
-\begin{tabbing}
-\hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \\
-\textbf{procedure} racing \\
-\> start with an initial candidate set $\Theta$ \\
-\> \textbf{repeat iterations $I$} \\
-\> \> process an instance stream \\
-\> \> evaluate the candidates sequentially \\
-\> \> remove inferior candidates \\
-\> \textbf{until} winner is selected or another exit condition fulfilled \\
-\textbf{end}
-\end{tabbing}
-\end{algorithm}
+
+\begin{minipage}[c, breaklines=true]{0.95\textwidth}
+\begin{lstlisting}[caption=General racing pseudo-code]
+procedure racing
+start with an initial candidate set Theta
+repeat iterations I
+	process an instance stream
+	evaluate the candidates sequentially
+	remove inferior candidates
+until winner is selected or exit condition fulfilled
+end
+\end{lstlisting}
+\end{minipage}
 
 
 
-\begin{figure}[htbp!]
+
+\begin{figure}[H]
   \centering
     \includegraphics[scale=1.2]{irace.jpg}
   \caption{I-RACE execution illustration}
@@ -122,18 +138,26 @@ A widely used configuration algorithmic family is racing algorithms. The simplif
 \end{figure}
 
 
-The I-RACE (iterated race) implementation has already been applied for the ACO problem in \cite{iraceaac}
+I-RACE(iterated race) implementation has already been developed and applied for the ACO problem in \cite{iraceaac}. It was implemented in R with taking into account the parallel programming techniques and initial candidate set-up. The feature of the IRACE is based on iterated generation of new configurations and removing of solutions with less fitness for further evaluating on the problem instances.
 
 \section{Conclusions}
 
+
 \subsection{Possible improvements}
+
 
 
 \begin{thebibliography}{1}
 
 
-  \bibitem{iraceaac} Manuel L{\'o}pez-Ib{\'a}{\~n}ez  and  J{\'e}r{\'e}mie Dubois-Lacoste  and Leslie {P{\'e}rez C{\'a}ceres}  and  Thomas St{\"u}tzle  and  Mauro Birattari {\em Iterated Racing for Automatic Algorithm Configuration} 2013: IRIDIA - Technical Report Series.
-
+\bibitem{iraceaac} Manuel L{\'o}pez-Ib{\'a}{\~n}ez  and  J{\'e}r{\'e}mie Dubois-Lacoste  and Leslie {P{\'e}rez C{\'a}ceres}  and  Thomas St{\"u}tzle  and  Mauro Birattari {\em Iterated Racing for Automatic Algorithm Configuration} 2013: IRIDIA - Technical Report Series.
+  
+\bibitem{external_memory} Dorigo, Marco
+and Birattari, Mauro
+and Blum, Christian
+and Gambardella, Luca Maria
+and Mondada, Francesco
+and St{\"u}tzle, Thomas {\em IAn External Memory Implementation in Ant Colony Optimization} 2004: Springer Berlin Heidelberg - Proceedings.
 
 \end{thebibliography}
 

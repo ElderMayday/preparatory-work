@@ -8,23 +8,23 @@ ACO algorithms are a subclass of construction heuristics algorithms. The meta-he
 \item The quality of the generated solutions affect the pheromones are updated during the run of the algorithms.
 \end{itemize}
 
-\begin{algorithm}
-\begin{tabbing}
-\hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \hspace*{1cm} \= \\
-\textbf{procedure} ACO-Metaheuristic \\
-\> \textbf{repeat} \\
-\> \> \textbf{for each} ant \textbf{do} \\
-\> \> \> \textbf{repeat} \\
-\> \> \> \> ExtendPartialSolutionProbabilistically() \\
-\> \> \> \textbf{until} solution is complete \\
-\> \> \textbf{for each} ant $\in$ SelectAntsForLocalSearch() \textbf{do} \\
-\> \> \> ApplyLocalSearch(ant) \\
-\> \> EvaporatePheromones() \\
-\> \> DepositPheromones() \\
-\> \textbf{until} termination criteria met \\
-\textbf{end}
-\end{tabbing}
-\end{algorithm}
+
+\begin{minipage}[c, breaklines=true]{0.95\textwidth}
+\begin{lstlisting}[caption=General ACO pseudo-code]
+procedure ACO-Metaheuristic
+repeat
+	foreach ant do
+		repeat
+			Extend partial solution probabilistically
+		until solution is complete
+	foreach ant in SelectAntsForLocalSearch() do
+		ApplyLocalSearch(ant)
+		EvaporatePheromones
+		DepositPheromones
+until termination criteria met
+end
+\end{lstlisting}
+\end{minipage}
 
 Several ants generate the solutions by iterative approach. After this an optional local solution search is applied. After those pheromone evaporation and deposition is done. Evaporation helps to reduce the convergence-prone behavior of the algorithm. Deposition is the part where the solutions affect the pheromone values in order to bias the future solutions.
 
@@ -76,8 +76,32 @@ Apparently larger $q_0$ gives more greedy choice.
 
 The following extensions are based on the starting from a partially constructed solution with partial destroying of a certain good solution and reconstructing it and thus anticipating to obtain even a better solution.
 
-TO-ELABORATE!!!
-\textbf{External memory}.
+
+\textbf{External memory} extension is inspired by genetic algorithms and described in \cite{external_memory}. It uses reinforcement procedures of the elite solutions with deferred reintroducing of solutions segments in following iterations. The ACO iteration is composed of two stages. First is meant to initialize the external memory. The second is the solution construction itself based on a partial solution.
+
+\begin{minipage}[c, breaklines=true]{0.95\textwidth}
+\begin{lstlisting}[caption=External memory iteration pseudo-code]
+procedure ACO-external-memory
+initialize the external memory
+repeat
+	set m ants in the graph
+	ants construct a solution using neighborhood graph and the pheromone matrix
+	select k-best solutions and cut randomly positioned and sized segments
+	store the segments into the external memory
+until the external memory is full
+done = false
+while not(done)
+	ants select their segments according to tournament selection
+	ants finish the solution construction
+	update the pheromone matrix
+	update the memory
+end
+end
+\end{lstlisting}
+\end{minipage}
+
+
+
 \textbf{Iterated ants}.
 \textbf{Cunning ants}.
 
@@ -134,6 +158,8 @@ For the mentioned update techniques several variants are possible: \\
 
 \begin{enumerate}
 \item {\textbf{Ant System} - i.e. without extensions.}
+
+\item {\textbf{Ant Colony System} - TO-ELABORATE!!!.}
 
 \item \textbf{Max-Min Ant System} - deposits a constant value of pheromone to the components instead of a value defined by the function of quality. The amount of pheromones per component is bounded $t_i \in [t_{max};t_{min}]$. The pheromones are deposited either by iteration-best or global-best solution. Also update schedule switches between ib, gb and rb depending on the branching factor.
 \begin{equation}
