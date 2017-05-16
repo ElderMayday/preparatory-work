@@ -70,14 +70,17 @@ Problem models.
 
 
 
+\subsection{Finding a better ACO configuration for the TSP}
+
+
+\subsection{Finding a better ACO configuration for the QAP}
+
 
 \section{Existing ACO framework (5 pages)}
 
 ACOTSP unified framework was developed by IRIDIA group. It was developed with tendency towards the purpose and component generality. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$).
 
-\subsection{Finding a better ACO configuration for the TSP}
-
-\subsection{Finding a better ACO configuration for the QAP}
++ MOACO, MOBA, Saternstein, hybridSLS ~1-2 parag!!!
 
 \section{Automatic configuration in IRACE (3 pages)}
 
@@ -96,14 +99,7 @@ Automatic configuration is a process that optimizes the performance of a certain
   \label{fig:autoconf}
 \end{figure}
 
-
-In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize).
-
-Two conceptual approaches can be remarked:
-\begin{itemize}
-\item Top-down - develop a fixed template-based algorithm.
-\item Bottom-up - algorithm is build of flexible components with some rule restrictions. Often involves application of genetic programming and evolution ideas.
-\end{itemize}
+Figure \ref{fig:autoconf} shows software composition of the analyzed program and configuration script. Configuration script has parameter metadata in its disposal. Based on them, the configuration software runs the software to configure with candidate configurations one by one according to the higher-mentioned racing algorithm. The result of the run is the solution cost of cumulative runs of the algorithm on the defined problem instances. After the racing process finishes, the configuration software renders the best configuration obtained. In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize).
 
 There are two application modes:
 \begin{itemize}
@@ -139,6 +135,13 @@ end
 
 
 I-RACE(iterated race) implementation has already been developed and applied for the ACO problem in \cite{iraceaac}. It was implemented in R with taking into account the parallel programming techniques and initial candidate set-up. The feature of the IRACE is based on iterated generation of new configurations and removing of solutions with less fitness for further evaluating on the problem instances.
+
+
+Two conceptual approaches can be remarked (although their distinction is ambiguous in particular cases):
+\begin{itemize}
+\item Top-down - develop a fixed template-based algorithm. It is based on strictly structured algorithm which allows some parametric configuration of some of its details with minor behavior modifications.
+\item Bottom-up - algorithm is build of flexible components with some rule restrictions. Often involves application of genetic programming and evolution ideas.
+\end{itemize}
 
 \section{Conclusions}
 

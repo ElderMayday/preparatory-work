@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  16 MAY 2017 20:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  16 MAY 2017 21:16
 entering extended mode
 **./state-of-the-art.tex
 (state-of-the-art.tex
@@ -706,35 +706,35 @@ Missing character: There is no ± in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 [14])
-Overfull \hbox (12.34567pt too wide) in paragraph at lines 82--82
+Overfull \hbox (12.34567pt too wide) in paragraph at lines 85--85
 []\OT1/cmr/bx/n/17.28 Automatic con-fig-u-ra-tion in IRACE (3 pages) 
  []
 
-<images/configuration-top-level.png, id=229, 452.69125pt x 347.2975pt>
+<images/configuration-top-level.png, id=229, 493.845pt x 348.30125pt>
 File: images/configuration-top-level.png Graphic file (type png)
 
 <use images/configuration-top-level.png>
 Package pdftex.def Info: images/configuration-top-level.png used on input line 
-94.
-(pdftex.def)             Requested size: 316.88171pt x 243.10658pt.
+97.
+(pdftex.def)             Requested size: 345.68913pt x 243.8092pt.
  [15]
-<images/irace.jpg, id=235, 140.70265pt x 168.84319pt>
+<images/irace.jpg, id=236, 140.70265pt x 168.84319pt>
 File: images/irace.jpg Graphic file (type jpg)
  <use images/irace.jpg>
-Package pdftex.def Info: images/irace.jpg used on input line 135.
+Package pdftex.def Info: images/irace.jpg used on input line 131.
 (pdftex.def)             Requested size: 168.8423pt x 202.6108pt.
 
 [16 <./images/configuration-top-level.png>] [17 <./images/irace.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
  [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
 
 (state-of-the-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
 Package rerunfilecheck Info: File `state-of-the-art.out' has not changed.
-(rerunfilecheck)             Checksum: 12DF8C71855CFC328B882313AD88F673;1426.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+(rerunfilecheck)             Checksum: 09D11E9F5B8833EE586029B9843B3641;1426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
  16777 strings out of 493333
@@ -757,9 +757,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-the-art.pdf (18 pages, 289418 bytes).
+Output written on state-of-the-art.pdf (18 pages, 291329 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
+ 332 PDF objects out of 1000 (max. 8388607)
  107 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
