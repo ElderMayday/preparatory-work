@@ -16,4 +16,3 @@
 \contentsline {subsection}{\numberline {7.1}Finding a better ACO configuration for the TSP}{19}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Finding a better ACO configuration for the QAP}{19}{subsection.7.2}
 \contentsline {section}{\numberline {8}Conclusions}{20}{section.8}
-\contentsline {subsection}{\numberline {8.1}Possible improvements}{20}{subsection.8.1}
