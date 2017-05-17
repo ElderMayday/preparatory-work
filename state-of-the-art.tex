@@ -141,11 +141,11 @@ Two conceptual approaches can be remarked (although their distinction is ambiguo
 
 \section{Research state}
 
-The higher-mentioned ACOTSP framework accompanied by IRACE R script have already produced results concerning TSP and QAP problems.
+The higher-mentioned ACOTSP framework accompanied by IRACE R script have already produced results for the TSP and the QAP problems. The results are described in the following two subsections. General conclusion during this research is that solutions obtained by the optimal configurations are better than those obtained by the default configurations. The comparison was carried out by measuring the deviation from the optimal solution for each instance.
 
 \subsection{Finding a better ACO configuration for the TSP}
 
-The optimal configuration is mentioned in the table \ref{table:table-tsp}, where it was computed for different algorithms.
+The optimal configuration is mentioned in the table \ref{table:table-tsp}, where it was computed for different algorithms. Various instances of different sizes were generated for the configuration process.
 
 \begin{table}[ht]
 \centering
@@ -156,14 +156,36 @@ The optimal configuration is mentioned in the table \ref{table:table-tsp}, where
     algo & $m$ & $\alpha$ & $\beta$ & $\rho$ & $q_0$ & $\epsilon$ & $cl$ & $nnls$ & $ph-limits$ & $slen$ & $restart$ & $res_{it}$\\ \hline
     ACS & 28 & 3.07 & 5.09 & 0.32 & 0.53 & 0.21 & 22 & 9 & - & - & branch-factor ($res_{bf} = 1.74$) & 212\\ \hline
 	MMAS & 40 & 0.94 & 4.11 & 0.72 & 0.14 & - & 18 & 12 & yes & 191 & branch-factor ($res_{bf} = 1.91$) & 367\\ \hline
-    
 \end{tabular}
 }
 \caption{Optimal configuration for the TSP problem.}
 \label{table:table-tsp} 
 \end{table} 
 
+With local search as 3-opt + dlb-bits.
+
 \subsection{Finding a better ACO configuration for the QAP}
+
+Problem instances were implemented in two forms - as RR or RS. In RR the distance matrix is computed as paired euclidean distances of points distributed on a square of length 300 in uniform way. The flow matrix is generated as a matrix of uniform random values within certain range. The RS distance matrix is generated in the same way, but the flow matrix adheres to real-world flow values.
+
+100 instances were considered where half of them was used for training and the another half for testing. The best found configuration are shown in the table \ref{table:table-qap}.
+
+\begin{table}[ht]
+\centering
+\resizebox{\textwidth}{!}
+{
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|r|r|r|}
+  \hline 
+    & algo & $m$ & $\alpha$ & $\rho$ & $q_0$ & $dlb-bits$ & $ph-limits$ & $slen$ & $restart$ & $res_{it}$\\ \hline
+    RR & MMAS & 6 & 0.324 & 0.29 & 0.062 & yes & no & 153 & distance ($res_{bf} = 0.051$) & 22\\ \hline
+	RS & MMAS & 4 & 0.164 & 0.342 & 0.284 & yes & no & 170 & branch-factor ($res_{bf} = 1.822$) & 40\\ \hline
+\end{tabular}
+}
+\caption{Optimal configuration for the TSP problem.}
+\label{table:table-qap} 
+\end{table} 
+
+With local search as 2-best-opt.
 
 \section{Conclusions}
 
