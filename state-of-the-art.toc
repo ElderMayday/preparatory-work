@@ -10,9 +10,10 @@
 \contentsline {subsection}{\numberline {3.7}Pheromone limits}{14}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Local search}{15}{subsection.3.8}
 \contentsline {section}{\numberline {4}Applications of ACO to other problem types (1 page)}{15}{section.4}
-\contentsline {subsection}{\numberline {4.1}Finding a better ACO configuration for the TSP}{16}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Finding a better ACO configuration for the QAP}{16}{subsection.4.2}
 \contentsline {section}{\numberline {5}Existing ACO framework (5 pages)}{16}{section.5}
 \contentsline {section}{\numberline {6}Automatic configuration in IRACE (3 pages)}{16}{section.6}
-\contentsline {section}{\numberline {7}Conclusions}{19}{section.7}
-\contentsline {subsection}{\numberline {7.1}Possible improvements}{19}{subsection.7.1}
+\contentsline {section}{\numberline {7}Research state}{19}{section.7}
+\contentsline {subsection}{\numberline {7.1}Finding a better ACO configuration for the TSP}{19}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Finding a better ACO configuration for the QAP}{19}{subsection.7.2}
+\contentsline {section}{\numberline {8}Conclusions}{19}{section.8}
+\contentsline {subsection}{\numberline {8.1}Possible improvements}{19}{subsection.8.1}

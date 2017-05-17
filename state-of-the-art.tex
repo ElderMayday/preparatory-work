@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{listings}
+\usepackage{tabularx}
 
 \lstset{
     frame=single,
@@ -70,10 +71,6 @@ Problem models.
 
 
 
-\subsection{Finding a better ACO configuration for the TSP}
-
-
-\subsection{Finding a better ACO configuration for the QAP}
 
 
 \section{Existing ACO framework (5 pages)}
@@ -81,6 +78,8 @@ Problem models.
 ACOTSP unified framework was developed by IRIDIA group. It was developed with tendency towards the purpose and component generality. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$).
 
 + MOACO, MOBA, Saternstein, hybridSLS ~1-2 parag!!!
+
+
 
 \section{Automatic configuration in IRACE (3 pages)}
 
@@ -139,6 +138,32 @@ Two conceptual approaches can be remarked (although their distinction is ambiguo
 \item Top-down - develop a fixed template-based algorithm. It is based on strictly structured algorithm which allows some parametric configuration of some of its details with minor behavior modifications.
 \item Bottom-up - algorithm is build of flexible components with some rule restrictions. Often involves application of genetic programming and evolution ideas.
 \end{itemize}
+
+\section{Research state}
+
+The higher-mentioned ACOTSP framework accompanied by IRACE R script have already produced results concerning TSP and QAP problems.
+
+\subsection{Finding a better ACO configuration for the TSP}
+
+The optimal configuration is mentioned in the table \ref{table:table-tsp}, where it was computed for different algorithms.
+
+\begin{table}[ht]
+\centering
+\resizebox{\textwidth}{!}
+{
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+  \hline 
+    algo & $m$ & $\alpha$ & $\beta$ & $\rho$ & $q_0$ & $\epsilon$ & $cl$ & $nnls$ & $ph-limits$ & $slen$ & $restart$ & $res_{it}$\\ \hline
+    ACS & 28 & 3.07 & 5.09 & 0.32 & 0.53 & 0.21 & 22 & 9 & - & - & branch-factor ($res_{bf} = 1.74$) & 212\\ \hline
+	MMAS & 40 & 0.94 & 4.11 & 0.72 & 0.14 & - & 18 & 12 & yes & 191 & branch-factor ($res_{bf} = 1.91$) & 367\\ \hline
+    
+\end{tabular}
+}
+\caption{Optimal configuration for the TSP problem.}
+\label{table:table-tsp} 
+\end{table} 
+
+\subsection{Finding a better ACO configuration for the QAP}
 
 \section{Conclusions}
 

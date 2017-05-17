@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  17 MAY 2017 04:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  17 MAY 2017 05:11
 entering extended mode
 **./state-of-the-art.tex
 (state-of-the-art.tex
@@ -548,30 +548,49 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen161
+\extrarowheight=\dimen162
+\NC@list=\toks23
+\extratabsurround=\skip120
+\backup@length=\skip121
+)
+\TX@col@width=\dimen163
+\TX@old@table=\dimen164
+\TX@old@col=\dimen165
+\TX@target=\dimen166
+\TX@delta=\dimen167
+\TX@cols=\count169
+\TX@ftn=\toks24
+)
 (state-of-the-art.aux)
 \openout1 = `state-of-the-art.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 46.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -579,11 +598,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count169
+\c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \nameref on input line 46.
 
 (state-of-the-art.out) (state-of-the-art.out)
 \@outlinefile=\write3
@@ -592,17 +611,17 @@ LaTeX Info: Redefining \nameref on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count170
-\scratchdimen=\dimen161
+\scratchcounter=\count171
+\scratchdimen=\dimen168
 \scratchbox=\box54
-\nofMPsegments=\count171
-\nofMParguments=\count172
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count173
-\MPscratchDim=\dimen162
-\MPnumerator=\count174
-\makeMPintoPDFobject=\count175
-\everyMPtoPDFconversion=\toks24
+\nofMPsegments=\count172
+\nofMParguments=\count173
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count174
+\MPscratchDim=\dimen169
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
+\everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -616,7 +635,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count176
+\c@lstlisting=\count177
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (state-of-the-art.toc
@@ -706,43 +725,44 @@ Missing character: There is no ± in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 [15])
-Overfull \hbox (12.34567pt too wide) in paragraph at lines 85--85
+Overfull \hbox (12.34567pt too wide) in paragraph at lines 84--84
 []\OT1/cmr/bx/n/17.28 Automatic con-fig-u-ra-tion in IRACE (3 pages) 
  []
 
-[16] <images/configuration-top-level.png, id=250, 493.845pt x 348.30125pt>
+[16] <images/configuration-top-level.png, id=255, 493.845pt x 348.30125pt>
 File: images/configuration-top-level.png Graphic file (type png)
 
 <use images/configuration-top-level.png>
 Package pdftex.def Info: images/configuration-top-level.png used on input line 
-97.
+96.
 (pdftex.def)             Requested size: 345.68913pt x 243.8092pt.
- [17 <./images/configuration-top-level.png>] <images/irace.jpg, id=261, 140.702
+ [17 <./images/configuration-top-level.png>] <images/irace.jpg, id=266, 140.702
 65pt x 168.84319pt>
 File: images/irace.jpg Graphic file (type jpg)
 
 <use images/irace.jpg>
-Package pdftex.def Info: images/irace.jpg used on input line 128.
+Package pdftex.def Info: images/irace.jpg used on input line 127.
 (pdftex.def)             Requested size: 168.8423pt x 202.6108pt.
- [18 <./images/irace.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
- (state-of-the-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+ [18 <./images/irace.jpg>] [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
+
+(state-of-the-art.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `state-of-the-art.out' has not changed.
-(rerunfilecheck)             Checksum: 09D11E9F5B8833EE586029B9843B3641;1426.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+(rerunfilecheck)             Checksum: EE5FBBE891230600C852E4BB2B4BE745;1477.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
  ) 
 Here is how much of TeX's memory you used:
- 16791 strings out of 493333
- 291956 string characters out of 3139195
- 451404 words of memory out of 3000000
- 20083 multiletter control sequences out of 15000+200000
+ 16888 strings out of 493333
+ 293140 string characters out of 3139195
+ 453248 words of memory out of 3000000
+ 20171 multiletter control sequences out of 15000+200000
  11589 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,42p,10425b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,11n,42p,10425b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -756,9 +776,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-the-art.pdf (19 pages, 296515 bytes).
+Output written on state-of-the-art.pdf (20 pages, 299653 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 367 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
