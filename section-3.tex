@@ -76,13 +76,9 @@ Apparently larger $q_0$ gives more greedy choice.
 
 \textbf{Heuristic precomputation} of the values $t_j^\alpha \times \eta_j^\beta$ for each of the solution components which are used in \eqref{eq:construction_dorigo}. The gain is based on the fact that all these exponentially-computed values will be shared by the ants at each iteration.
 
-The following extensions (iterated greedy) are based on the starting from a partially constructed solution with partial destroying of a certain good solution and reconstructing it and thus anticipating to obtain even a better solution.
-
+The following extensions (iterated greedy extensions) are based on the starting from a partially constructed solution with partial destroying of a certain good solution and reconstructing it and thus anticipating to obtain even a better solution.
 
 \textbf{External memory} extension is inspired by genetic algorithms and described in \cite{external_memory}. It uses reinforcement procedures of the elite solutions with deferred reintroducing of solutions segments in following iterations (see \ref{lst:ext-mem}). The ACO iteration is composed of two stages. First is meant to initialize the external memory. The second is the solution construction itself based on a partial solution.
-
-\textbf{Iterated ants}.
-\textbf{Cunning ants}.
 
 \begin{minipage}[c, breaklines=true]{0.95\textwidth}
 \begin{lstlisting}[caption={External memory iteration pseudo-code}, label={lst:ext-mem}]
@@ -104,6 +100,27 @@ end
 end
 \end{lstlisting}
 \end{minipage}
+
+\textbf{Iterated ants}. Based on the following additional notions. Destruct() removes some solution components from a complete solution. Constuct() constructs a complete solution from initially partial solution. Acceptance-criterion chooses one of two complete solutions in order to continue the construction with it. Concrete implementations of these strategies are defined in problem-specific way. The algorithm of the extension is showed in \ref{lst:iterated-ants} 
+
+\begin{minipage}[c, breaklines=true]{0.95\textwidth}
+\begin{lstlisting}[caption={General ACO pseudo-code}, label={lst:iterated-ants}]
+procedure iterated-ants
+	s0 = initial-solution()
+	s = local-search(s0)
+	repeat
+		sp = destruct(s)
+		s' = construct(sp)
+		s' = local-search(s') // optional
+		s = acceptances-criterion(s, s')
+	until termination criterion met
+end
+\end{lstlisting}
+\end{minipage}
+
+\textbf{Cunning ants}.
+
+Cunning ants algorithm tackles to the solution generation by iterated producing of new ant population. The algorithm has a pheromone database and an ant population of fixed size. For every existing ant, a new one is produced which borrows some solution parts from its parent. Then in each such ant pair a winner is selected and all winners continue their work in the next iteration. After each iteration all winners jointly update the pheromone database and stop if the termination criteria is met. Similarly the solution component inheritance process is problem-specific.
 
 
 

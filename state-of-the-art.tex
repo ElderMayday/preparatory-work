@@ -107,11 +107,11 @@ There are two application modes:
 \item Online tuning - tunes the parameters while solving the actual instance set.
 \end{itemize}
 
-A widely used configuration algorithmic family is racing algorithms. The simplified algorithm is as follows
+A widely used configuration algorithmic family is racing algorithms. The simplified algorithm is shown in \ref{lst:racing} and an illustration is showed in \ref{fig:irace}.
 
 
 \begin{minipage}[c, breaklines=true]{0.95\textwidth}
-\begin{lstlisting}[caption=General racing pseudo-code]
+\begin{lstlisting}[caption={General racing pseudo-code}, label={lst:racing}]
 procedure racing
 start with an initial candidate set Theta
 repeat iterations I
