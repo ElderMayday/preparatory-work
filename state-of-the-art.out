@@ -10,9 +10,11 @@
 \BOOKMARK [2][-]{subsection.3.7}{Pheromone limits}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.8}{Local search}{section.3}% 11
 \BOOKMARK [1][-]{section.4}{Applications of ACO to other problem types \(1 page\)}{}% 12
-\BOOKMARK [1][-]{section.5}{Existing ACO framework \(5 pages\)}{}% 13
-\BOOKMARK [1][-]{section.6}{Automatic configuration in IRACE \(3 pages\)}{}% 14
-\BOOKMARK [1][-]{section.7}{Research state}{}% 15
-\BOOKMARK [2][-]{subsection.7.1}{Finding a better ACO configuration for the TSP}{section.7}% 16
-\BOOKMARK [2][-]{subsection.7.2}{Finding a better ACO configuration for the QAP}{section.7}% 17
-\BOOKMARK [1][-]{section.8}{Conclusions}{}% 18
+\BOOKMARK [1][-]{section.5}{Existing optimization frameworks \(5 pages\)}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{ACOTSP}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Other frameworks}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Automatic configuration in IRACE \(3 pages\)}{}% 16
+\BOOKMARK [1][-]{section.7}{Research state}{}% 17
+\BOOKMARK [2][-]{subsection.7.1}{Finding a better ACO configuration for the TSP}{section.7}% 18
+\BOOKMARK [2][-]{subsection.7.2}{Finding a better ACO configuration for the QAP}{section.7}% 19
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 20

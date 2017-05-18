@@ -73,12 +73,21 @@ Problem models.
 
 
 
-\section{Existing ACO framework (5 pages)}
+\section{Existing optimization frameworks (5 pages)}
 
-ACOTSP unified framework was developed by IRIDIA group. It was developed with tendency towards the purpose and component generality. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$).
+\subsection{ACOTSP}
 
-+ MOACO, MOBA, Saternstein, hybridSLS ~1-2 parag!!!
+ACOTSP unified framework was developed by IRIDIA group. It was developed with tendency towards the purpose and component generality. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$). All these parameters are to be tuned by an external configuration software.
 
+\subsection{Other frameworks}
+
+The MOACO framework was briefly described in the previous section. Besides there are some other optimization frameworks which have different features.
+
+Multi-objective Bat Algorithm (MOBA) is based on the natural traits of bat behavior. Bat emits waves in the space which allow it to find the prey location. The bat speed, the emission  frequency and emission amplitude are the parameters which the bat is able to steer. When a bat finds a potential prey it increases the frequency and decreases the amplitude and therefore is able to locate it more precisely. In optimization problem a similar action is being done by a bat when it "flies" within the parameter search space. The general purpose of MOBA is to find the Pareto Front of the parameters.
+
+Another remarkable framework is SATenstein. It can solve single-objective optimization problems. It is based on solving satisfiability problem of a boolean formula.
+
+Hybrid Stochastic Local Search (SLS) algorithms are based on decomposition of single-point SLS methods into separate components with generalized metaheuristic structure.
 
 
 \section{Automatic configuration in IRACE (3 pages)}
