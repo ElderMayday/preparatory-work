@@ -1,6 +1,6 @@
 \BOOKMARK [1][-]{section.1}{Introduction \(1 page\)}{}% 1
 \BOOKMARK [1][-]{section.2}{Combinatorial Optimization Problems and Constructive Heuristics \(11 pages\)}{}% 2
-\BOOKMARK [1][-]{section.3}{The Concepts of Ant Colony Optimization}{}% 3
+\BOOKMARK [1][-]{section.3}{Ant Colony Optimization}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Choice of pheromone trails and heuristic information}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Solution component choice}{section.3}% 5
 \BOOKMARK [2][-]{subsection.3.3}{Construction extensions}{section.3}% 6
@@ -11,7 +11,7 @@
 \BOOKMARK [2][-]{subsection.3.8}{Local search}{section.3}% 11
 \BOOKMARK [1][-]{section.4}{Applications of ACO to other problem types \(1 page\)}{}% 12
 \BOOKMARK [1][-]{section.5}{Existing optimization frameworks \(5 pages\)}{}% 13
-\BOOKMARK [2][-]{subsection.5.1}{ACOTSP}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.1}{ACOTSPQAP}{section.5}% 14
 \BOOKMARK [2][-]{subsection.5.2}{Other frameworks}{section.5}% 15
 \BOOKMARK [1][-]{section.6}{Automatic configuration in IRACE \(3 pages\)}{}% 16
 \BOOKMARK [1][-]{section.7}{Research state}{}% 17

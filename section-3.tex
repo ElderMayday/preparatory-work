@@ -1,11 +1,11 @@
-\section{The Concepts of Ant Colony Optimization}
+\section{Ant Colony Optimization}
 
-ACO algorithms are a class of construction heuristics. Meta-heuristic can be applied in this case. Meta-heuristic is a top-level heuristic which is used to improve performance of an optimization problem. Thus, features of ACO algorithms are the following.
+ACO algorithms are a class of construction heuristics. Meta-heuristic is a top-level heuristic which is used to improve the performance of an underlying, basic heuristic. ACO is such a metaheuristic that can be used to improve the performance if construction heuristic. Features of ACO algorithms are the following.
 
 \begin{itemize}
-\item ACO algorithms are the population-based algorithms. Solutions are being generated at each iteration.
-\item Solutions are being generated according to a probability-based mechanism, which is biased by the pheromone the assignment to problem specific solution components.
-\item The quality of the generated solutions affect the pheromones, which are updated during the run of the algorithms.
+\item ACO algorithms are population-based algorithms. Solutions are being generated at each iteration.
+\item Solutions are being generated according to a probability-based mechanism, which is biased by artificial pheromones that are assigned to problem specific solution components.
+\item The quality of the generated solutions affect the pheromones, which are updated during the run of the algorithm.
 \end{itemize}
 
 
@@ -28,7 +28,7 @@ end
 \end{lstlisting}
 \end{minipage}
 
-Pheromones are numeric characteristics of the solution components that are meant to bias the solution in order to improve its quality. Several ants generate the solutions by iterative approach (see \ref{lst:aco}). After this an optional local solution search is applied. After those pheromone evaporation and deposit is done. Evaporation helps to reduce the convergence-prone behavior of the algorithm. Deposit is the part where the solutions affect the pheromone values in order to bias the future solutions.
+Pheromones are numeric characteristics of the solution components that are meant to bias the solution construction in order to improve the quality of the generated solutions. Several ants generate the solutions by iterative approach (see Listing \ref{lst:aco}). After this, an optional local search is applied. Next, pheromone evaporation and deposit is done. Evaporation helps to reduce the convergence-prone behavior of the algorithm. Deposit is the part where the solutions affect the pheromone values in order to bias the future solutions.
 
 \subsection{Choice of pheromone trails and heuristic information}
 
