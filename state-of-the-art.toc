@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction (1 page)}{3}{section.1}
-\contentsline {section}{\numberline {2}Combinatorial Optimization Problems and Constructive Heuristics (11 pages)}{3}{section.2}
-\contentsline {section}{\numberline {3}Ant Colony Optimization}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Choice of pheromone trails and heuristic information}{7}{subsection.3.1}
+\contentsline {section}{\numberline {2}Combinatorial Optimization Problems and Constructive Heuristics (11 pages)}{4}{section.2}
+\contentsline {section}{\numberline {3}Ant Colony Optimization}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Choice of pheromone trails and heuristic information}{8}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Solution component choice}{8}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Construction extensions}{9}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Global pheromone update}{11}{subsection.3.4}
