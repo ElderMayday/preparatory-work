@@ -1,5 +1,5 @@
-\BOOKMARK [1][-]{section.1}{Introduction \(1 page\)}{}% 1
-\BOOKMARK [1][-]{section.2}{Combinatorial Optimization Problems and Constructive Heuristics \(11 pages\)}{}% 2
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Combinatorial Optimization Problems and Constructive Heuristics}{}% 2
 \BOOKMARK [1][-]{section.3}{Ant Colony Optimization}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Choice of pheromone trails and heuristic information}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Solution component choice}{section.3}% 5
@@ -9,11 +9,11 @@
 \BOOKMARK [2][-]{subsection.3.6}{Local pheromone update}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.7}{Pheromone limits}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.8}{Local search}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Applications of ACO to other problem types \(1 page\)}{}% 12
-\BOOKMARK [1][-]{section.5}{Existing optimization frameworks \(5 pages\)}{}% 13
+\BOOKMARK [1][-]{section.4}{Applications of ACO to other problem types}{}% 12
+\BOOKMARK [1][-]{section.5}{Existing optimization frameworks}{}% 13
 \BOOKMARK [2][-]{subsection.5.1}{ACOTSPQAP}{section.5}% 14
 \BOOKMARK [2][-]{subsection.5.2}{Other frameworks}{section.5}% 15
-\BOOKMARK [1][-]{section.6}{Automatic configuration in IRACE \(3 pages\)}{}% 16
+\BOOKMARK [1][-]{section.6}{Automatic configuration in IRACE}{}% 16
 \BOOKMARK [1][-]{section.7}{Research state}{}% 17
 \BOOKMARK [2][-]{subsection.7.1}{Finding a better ACO configuration for the TSP}{section.7}% 18
 \BOOKMARK [2][-]{subsection.7.2}{Finding a better ACO configuration for the QAP}{section.7}% 19

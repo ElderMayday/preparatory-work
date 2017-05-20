@@ -58,7 +58,7 @@ Some animal species show an extreme degree of social organization. Such species 
 
 
 
-\section{Introduction (1 page)}
+\section{Introduction}
 
 In this report we display the current research state of the Ant Colony Optimization frameworks that solve optimization problems and their configuration. To do that we split the report into several sections which will represent different practical points of the ACO application. \\
 In the section 2 we introduce the basic notions of the Combinatorial Optimization Problems. These problems are described by means of two particular NP-hard problems - the  Traveling Salesman Problem and the Quadratic Assignment Problem. For them, we define the problem formulations as well as the objective functions. \\
@@ -77,7 +77,7 @@ The section 8 concludes the report and proposes further possible contributions i
 
 
 
-\section{Existing optimization frameworks (5 pages)}
+\section{Existing optimization frameworks}
 
 \subsection{ACOTSPQAP}
 
@@ -87,14 +87,14 @@ ACOTSP unified framework was developed by IRIDIA group. It was developed with te
 
 The MOACO framework was briefly described in the previous section. Besides there are some other optimization frameworks which have different features.
 
-Multi-objective Bat Algorithm (MOBA) is based on the natural traits of bat behavior. Bat emits waves in the space which allow it to find the prey location. The bat speed, the emission  frequency and emission amplitude are the parameters which the bat is able to steer. When a bat finds a potential prey it increases the frequency and decreases the amplitude and therefore is able to locate it more precisely. In optimization problem a similar action is being done by a bat when it "flies" within the parameter search space. The general purpose of MOBA is to find the Pareto Front of the parameters.
+Multi-objective Bat Algorithm (MOBA) is based on the natural traits of bat behavior. Bat emits waves in the space which allow it to find the prey location. The bat speed, the emission  frequency and emission amplitude are the parameters which the bat is able to steer. When a bat finds a potential prey it increases the frequency and decreases the amplitude and therefore is able to locate it more precisely. In optimization problem a similar action is being done by a bat when it "flies" within the parameter search space. The general purpose of MOBA is to find the Pareto Front of the parameters \cite{moba}.
 
 Another remarkable framework is SATenstein. It can solve single-objective optimization problems. It is based on solving satisfiability problem of a boolean formula.
 
 Hybrid Stochastic Local Search (SLS) algorithms are based on decomposition of single-point SLS methods into separate components with generalized metaheuristic structure.
 
 
-\section{Automatic configuration in IRACE (3 pages)}
+\section{Automatic configuration in IRACE}
 
 Automatic configuration is a process that optimizes the performance of a certain algorithm as a goal function based on input parameters of the algorithm. The general parameter types are:
  
@@ -213,8 +213,56 @@ From technical point of view we can propose implementing a new framework using o
 \begin{thebibliography}{1}
 
 
+\bibitem{aco_overview} Manuel L{\'o}pez-Ib{\'a}{\~n}ez and Thomas St{\"u}tzle {\em Ant Colony Optimization: A Component-Wise Overview} 2015: IRIDIA - Technical Report Series.
+
+\bibitem{comb_opt} Papadimitriou CH, Steiglitz K {\em Ant Colony Optimization: A Component-Wise Overview} 1982: IRIDIA - Prentice Hall, Englewood Cliffs, NJ.
+
+\bibitem{maniezzo} Maniezzo V {\em Exact and approximate nondeterministic tree-search procedures for the quadratic assignment problem} 1999: INFORMS Journal on Computing.
+
+\bibitem{dorigo} Dorigo M, Gambardella LM {\em Ant Colony System: A cooperative learning
+approach to the traveling salesman problem} 1997: IEEE Transactions on Evolutionary
+Computation.
+
+\bibitem{lookahead} Michel R, Middendorf M {\em An island model based Ant System with
+lookahead for the shortest supersequence problem} 1998: Nature, PPSN V, Lecture Notes in Computer Science.
+
+\bibitem{candidate_list} Dorigo M, Di Caro GA {\em The Ant Colony Optimization meta-heuristic} 1999: New Ideas in Optimization, McGraw Hill, London, UK.
+
+\bibitem{hash_table} Alba E, Chicano F {\em ACOhg: dealing with huge graphs} 2007: Proceedings of the Genetic and Evolutionary Computation Conference.
+
+\bibitem{iterated_greedy} Ruiz R, Thomas St{\"u}tzle {\em A simple and effective iterated greedy algorithm for the permutation flowshop scheduling problem} 2007: European Journal of Operational Research.
+
+\bibitem{iterated_ants} Wolfram Wiesemann and Thomas St{\"u}tzle {\em Iterated Ants: An Experimental Study for the Quadratic Assignment Problem} 2006: Fachbereich Wirtschaftswissenschaften.
+
+\bibitem{cunning_ants} Shigeyoshi Tsutsui {\em cAS: Ant Colony Optimization with Cunning
+Ants} 2006: Hannan University, Matsubara Osaka.
+
+\bibitem{mmas} Thomas St{\"u}tzle and Hoos HH {\em MAX–MIN Ant System} 2000: Future Generation Computer Systems.
+
+\bibitem{ras} Bullnheimer B, Hartl R, Strauss C {\em A new rank-based version of the
+Ant System} 1999: Central European Journal for Operations Research and Economics.
+
+\bibitem{eas} Dorigo M {\em Optimization, learning and natural algorithms} 1992: Dipartimento di Elettronica, Politecnico di Milano, Italy.
+
+\bibitem{bwas} Cordon O, de Viana IF, Herrera F, Moreno L {\em A new ACO model
+integrating evolutionary computation concepts: The best-worst ant system} 2000: Second International Workshop on Ant Algorithms.
+
+\bibitem{coop_tsp} Dorigo M, Gambardella LM {\em Ant Colony System: A cooperative learning
+approach to the traveling salesman problem.} 1997: IEEE Transactions on Evolutionary
+Computation.
+
 \bibitem{iraceaac} Manuel L{\'o}pez-Ib{\'a}{\~n}ez  and  J{\'e}r{\'e}mie Dubois-Lacoste  and Leslie {P{\'e}rez C{\'a}ceres}  and  Thomas St{\"u}tzle  and  Mauro Birattari {\em Iterated Racing for Automatic Algorithm Configuration} 2013: IRIDIA - Technical Report Series.
+
+\bibitem{aco_continuous} Socha K, Dorigo M {\em Iterated Racing for Automatic Algorithm Configuration} 2008: European Journal of Operational Research.
   
+\bibitem{aco_incremental} Liao T, Montes de Oca MA, Aydin D, St{\"u}tzle T, Dorigo M {\em An incremental ant colony algorithm with local search for continuous optimization} 2011: Proceedings of the Genetic and Evolutionary
+Computation Conference.  
+  
+\bibitem{moaco} L{\'o}pez-Ib{\'a}{\~n}ez M, St{\"u}tzle T {\em The automatic design of multi-objective ant colony optimization algorithms} 2012: IEEE Transactions on Evolutionary Computation.    
+  
+\bibitem{moba} Xin-She Yang {\em Bat Algorithm for Multi-objective Optimisation} 2011: Department of Engineering, University of Cambridge.  
+ 
+ 
 \bibitem{external_memory} Dorigo, Marco
 and Birattari, Mauro
 and Blum, Christian

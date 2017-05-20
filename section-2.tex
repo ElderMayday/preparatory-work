@@ -1,11 +1,11 @@
 \section{Combinatorial Optimization Problems and Constructive
-Heuristics (11 pages)}
+Heuristics}
 
 Combinatorial optimization problems (COPs) are a class of mathematical optimization problems. These problems can be described as a grouping, ordering, assignment or any other operations over a set of discrete objects. In practice, one may need to resolve COPs, which have a large number of extra constraints for the solutions to consider them as admissible. Many of these problems which have been thoroughly researched at the moment, belong to NP-hard discrete optimization problems. NP-hard problem means that we cannot decompose a large instance of such problems into a smaller one. The best performing algorithms known today solve such problems have a worst-case run-time larger than polynomial (e.g. exponential).
 
 \begin{minipage}[c, breaklines=true]{0.95\textwidth}
 \begin{definition}
-	\underline{An Optimization Problem} is a tuple ($\Phi,\omega, f$), where
+	\underline{An Optimization Problem} is a tuple \cite{comb_opt} ($\Phi,\omega, f$), where
 	\begin{itemize}
 		\item{$\Phi$ is a \underline{search space} consisting of all possible assignments of discrete variables $x_i$, with $i=1,...,n$ }
 		\item{$\omega$ is a \underline{set of constraints} on the decision variables}
@@ -15,7 +15,7 @@ Combinatorial optimization problems (COPs) are a class of mathematical optimizat
 \end{minipage} \\
 
 The problem describes the abstract task (e.g. find the minimum spanning tree of some graph), while the instance of a problem describes a specific practical problem (e.g. find the minimum spanning tree of a given graph G). The objective function is the sum of the weights of the selected edges. \\
-One of the most studied problems is the traveling salesman problem (TSP). Given a graph $G=(N,E)$ with $n=|N|$ nodes and $E$ being the set of edges that fully connects the nodes and distances $d_{ij}, \forall(i,j) \in E$, one should find a Hamiltonian path of minimal length (in terms of sum of the weighted edges). The solution path can be represented as permutation $\pi=(\pi_1,...,\pi_n)^t$ of all \emph{n} nodes, where $\pi_i$ is the node index at position i. The objective is
+One of the most studied problems is the traveling salesman problem (TSP) \cite{aco_overview}. Given a graph $G=(N,E)$ with $n=|N|$ nodes and $E$ being the set of edges that fully connects the nodes and distances $d_{ij}, \forall(i,j) \in E$, one should find a Hamiltonian path of minimal length (in terms of sum of the weighted edges). The solution path can be represented as permutation $\pi=(\pi_1,...,\pi_n)^t$ of all \emph{n} nodes, where $\pi_i$ is the node index at position i. The objective is
 
 \begin{equation}
 \min \limits_{\pi \in \Phi} {d_{\pi_i \pi_{i+1}}} + \sum \limits_{i+1}^{n-1} {d_{\pi_i \pi_{i+1}}}
