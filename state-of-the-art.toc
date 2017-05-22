@@ -4,17 +4,17 @@
 \contentsline {subsection}{\numberline {3.1}Choice of pheromone trails and heuristic information}{8}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Solution component choice}{8}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Construction extensions}{9}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Global pheromone update}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Initialization and reinitialization of pheromones}{14}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Local pheromone update}{14}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Pheromone limits}{14}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Local search}{15}{subsection.3.8}
-\contentsline {section}{\numberline {4}Applications of ACO to other problem types}{15}{section.4}
-\contentsline {section}{\numberline {5}Existing optimization frameworks}{16}{section.5}
-\contentsline {subsection}{\numberline {5.1}ACOTSPQAP}{16}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Other frameworks}{16}{subsection.5.2}
-\contentsline {section}{\numberline {6}Automatic configuration in IRACE}{17}{section.6}
-\contentsline {section}{\numberline {7}Research state}{20}{section.7}
-\contentsline {subsection}{\numberline {7.1}Finding a better ACO configuration for the TSP}{20}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Finding a better ACO configuration for the QAP}{20}{subsection.7.2}
-\contentsline {section}{\numberline {8}Conclusions}{21}{section.8}
+\contentsline {subsection}{\numberline {3.4}Global pheromone update}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Initialization and reinitialization of pheromones}{15}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Local pheromone update}{15}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Pheromone limits}{15}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Local search}{16}{subsection.3.8}
+\contentsline {section}{\numberline {4}Applications of ACO to other problem types}{16}{section.4}
+\contentsline {section}{\numberline {5}Existing optimization frameworks}{17}{section.5}
+\contentsline {subsection}{\numberline {5.1}ACOTSPQAP}{17}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Other frameworks}{17}{subsection.5.2}
+\contentsline {section}{\numberline {6}Automatic configuration in IRACE}{18}{section.6}
+\contentsline {section}{\numberline {7}Research state}{21}{section.7}
+\contentsline {subsection}{\numberline {7.1}Finding a better ACO configuration for the TSP}{21}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Finding a better ACO configuration for the QAP}{21}{subsection.7.2}
+\contentsline {section}{\numberline {8}Conclusions}{22}{section.8}
