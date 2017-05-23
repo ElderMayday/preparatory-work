@@ -210,17 +210,17 @@ where: $w=|S^{upd}|$, r-solution rank in the current iteration
 
 \item {\textbf{Elitist Ant System} - all solutions from the current iteration deposit pheromones as well as the global-best solution $s_{gb}$ deposits an amount $w_{gb} \times F(s_{gb}) = Q \times \frac{m_{elite}}{f(s_{gb})}$ \cite{eas}, where $m_{elite}$ is the multiplicative factor that increases the weight of $s_{gb}$ solution, $Q$ is the same multiplication factor from the standard AS.}
 
-\item {\textbf{Best-Worst Ant System} denotes that the global-best solution deposits the pheromones but also evaporation is applied to the components from the worst solution of the current iteration (which also do not present in global-best one) \cite{bwas}}
+\item {\textbf{Best-Worst Ant System} denotes that pheromone trail values are deposited to the solution components that constitute the global-best solution but also evaporation is applied to the components from the worst solution of the current iteration (which are in the global-best solution) \cite{bwas}}
 
 \end{enumerate}
 
-Pheromone update schedule mechanism allows to dynamically switch between different solution selections. For example algorithm typically starts from ib and then coverts to gb or rb.
+The pheromone update schedule allows to dynamically switch between different solution selections. For example algorithm typically starts from ib and then coverts to gb or rb. If one wants to start the problem solution process with exploratory behavior and end up with exploiting one, then it is possible to start solution process with ib-update and then switch to gb or ib updates at the later solution iterations. The update schedule has a major influence on the ACO algorithm performance, since it determines the balance between convergence and exploration traits of the algorithm in a global scale.
 
 
 
 \subsection{Initialization and reinitialization of pheromones}
 
-The solution selection algorithm plays critical role in determining of the ACO algorithm behavior. However it is also important how one initializes and reinitializes the pheromones. Typically for ACS and BWAS very small initial values are assigned in the beginning and large ones for MMAS. Small values stand for exploitative bias whereas large stand for exploration one. Pheromone reinitialization is often applied in TSP and QAP since otherwise the run may converge rapidly. MMAS uses a notion of branching factor in a way such that when it exceeds certain value, all pheromone trails are reset to initial state. BWAS resets whenever the distance between global-best and global-worst solution for a certain iteration plummets down lower than a predefined value.
+The solution selection algorithm plays a critical role in determining the ACO algorithm behavior. However, it is also important how one initializes and reinitializes the pheromones. Typically for ACS and BWAS very small initial values are assigned in the beginning and large ones for MMAS. Small values stand for exploitative bias, whereas large stand for exploration one, because in the first case better solution components will rapidly gain pheromone values advantage over the rest ones, and in the second case the high values will oppose such fast convergence. Pheromone reinitialization in often applied in ACO algorithms since otherwise the run may converge rapidly. MMAS uses a notion of branching factor in such a way that when it falls below a certain value, all pheromone trails are reset to the initial pheromone trail value. BWAS resets whenever the distance between global-best and global-worst solution for a certain iteration plummets down lower than a predefined value.
 
 
 \subsection{Local pheromone update}
@@ -233,26 +233,27 @@ For sake of making the behavior more exploratory one can apply \cite{coop_tsp} l
 
 $\epsilon$ - update strength. $\tau_0$ - initial pheromone trail.
 
-Therefore already explored components become less attractive. Important part is whether the algorithm will work sequentially or in parallel. However it does not behave very efficiently with other ACO algorithms but ACS.
+This local evaporation is applied to solution components which are used by some ant and future ants will choose these components with smaller probability. Therefore, already explored components become less attractive. An important algorithmic detail is whether the algorithm will work sequentially or in parallel, since in parallel case ants will have to modify the pheromone trails simultaneously, whereas in sequential they have no such a problem. However it does not behave very efficiently with other ACO algorithms but ACS, because it relies on a strong gb-update and a lack of pheromone evaporation.
 
-\subsection{Pheromone limits}
-As it was said MMAS is based on restricting the pheromone values in certain range. It is to prevent stagnation (i.e. situation when certain components cannot be selected at all). Parameter $p_{dec}$ is the probability that an ant has chosen exactly the sequence of solution components that correspond to the best solution.
+\subsection{Pheromone trail limits}
+As it was said before, MMAS is based on restricting the pheromone values in a certain range. Parameter $p_{dec}$ is the probability that an ant chooses exactly the solution components that reproduce best solution found so far.
 
 \begin{equation}
 \tau_{min} = \frac{\tau_{max} \times (1 - \sqrt[n]{p_{dec}})}{n' \times \sqrt[n]{p_{dec}}} 
+\label{eq:mmas_tmin}
 \end{equation}
 
-where n' - is an estimation of the number of solution components available to each ant at each construction step (often corresponds to $\frac{n}{2}$).
+where n' - is an estimation of the number of solution components available to each ant at each construction step (often corresponds to $\frac{n}{2}$). The $p_dec$ allows to estimate the reasonable values for $\tau_{min}$ according to formula \ref{eq:mmas_tmin}. This formula relies on two facts. First is that the best solutions are found shortly before search stagnation occurs. The second fact is that the relative difference between upper and lower pheromone trail limits has more influence on the solution construction than the relative differences of the heuristic information
 
 \subsection{Local search}
-Local search allows to significantly increase the obtained solutions quality for specific problems. It is based on small iterative solution changes obtained by applying a neighborhood operator (which is problem-specific).
+Local search allows to significantly increase the obtained solutions quality for specific problems. It is based on small iterative solution changes obtained by applying a so-called neighborhood operator.
 
 \begin{itemize}
 \item \textbf{best-improvement} scans all the neighborhood and chooses the best solution.
 \item \textbf{first-improvement} takes the first found improving solution in the neighborhood.
 \end{itemize}
 
-
+In the general ACO algorithm this stage is optional. If it is fast and effective it may be used to all solutions at each iteration. In other cases applying it in iteration-best ants may be the optimal strategy. A neighborhood operator is always defined in a problem-specific way. For example, in the TSP problem a frequent way to find a solution in solution neighborhood is 2-opt. This algorithm considers the solution route partition into three sequential sub-routes with reversing of the middle one, in case if it will reduce the length of the tour. 2-opt for the QAP problem swaps two facilities from two certain locations if the total distance-flow cost will be lower.
 
 
 
