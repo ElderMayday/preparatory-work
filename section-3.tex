@@ -32,7 +32,7 @@ Pheromones are numeric characteristics of the solution components that are meant
 
 \subsection{Choice of pheromone trails and heuristic information}
 
-Generally there are two mechanisms of biasing the solution - pheromones and heuristic values. \\
+Generally there are two mechanisms of biasing the solution construction - pheromones and heuristic values. \\
 Hereby we introduce the following components: \\
 $C$ - set of solution components (a combination of which can constitute a solution). \\
 $\tau_c \in T$ - pheromones trail values for solution component bias. \\
@@ -40,24 +40,24 @@ $\tau'_c \in T'$ - pheromones trail values for particular purposes (as choosing 
 $\pi$ - candidate solution. \\
 $\eta_c \in H$ - heuristic information (constant in time). \\
 
-Higher values of $\tau_c$ stand for the higher probability that the component $c$ will be added to solution. Additionally, problem-specific pheromones as $\tau'_c$ can be used for auxiliary purposes (e.g. desirability of considering of one facility after another in the QAP). Heuristic information $H$ is similar to the pheromone trails in terms of that they both bias the solution component choice, however, it is defined in problem-specific way and is not updated during the algorithm execution ($\forall c \in C, \exists \eta_c \in H$). Heuristic information is either static values or values which are defined by a function of the current partially constructed solution. 
+Higher values of $\tau_c$ stand for a higher probability that the component $c$ will be added to a solution. Additionally, problem-specific pheromones as $\tau'_c$ can be used for auxiliary purposes (e.g. desirability of considering of one facility after another in the QAP). Heuristic information $H$ is similar to the pheromone trails in terms of that they both bias the solution component choice, however, it is defined in problem-specific way and is not updated during the algorithm execution ($\forall c \in C, \exists \eta_c \in H$). Heuristic information is either static values or values which are defined by a function of the current partially constructed solution. 
 
 \subsection{Solution component choice}
 
-The solution construction phase yields a new solution set. The probability of $c_j$ to be added at certain step can be calculated by different techniques (i.e. $Pr(c_j|T,H,s)$). Each ant starts with an empty solution $s$. Each ant may produce one solution. At each solution extension iteration one solution component is added. One of the rules to choose the next solution component is defined as follows:
+The solution construction phase, as says the name, yields a new solution set. The probability of $c_j$ to be added at a certain step can be calculated by different techniques (i.e. $Pr(c_j|T,H,s)$). Each ant starts with an empty solution $s$. Each ant may produce one solution at one execution of the solution construction phase. At each construction step one solution component is added. A frequently used rule is defined as follows:
 
 \begin{equation}
 Pr(c_j)=\frac{t_j^\alpha \times \eta_j^\beta}{\sum \limits_{c_k \in N_i} t_k^\alpha \times \eta_k^\beta} \forall c_j \in N_i
 \label{eq:construction_classic}
 \end{equation}
 
-$\alpha$ and $\beta$ are determine the impact of the pheromone trails and heuristic information on the final probability. Another alternative has been proposed by Maniezzo \cite{maniezzo} which combines the pheromone trails and heuristic information in a linear way.
+$\alpha$ and $\beta$ are parameters that determine the impact of the pheromone trails and heuristic information on the final probability. Another alternative has been proposed by Maniezzo \cite{maniezzo}, which combines the pheromone trails and heuristic information in a linear way.
 
 \begin{equation}
 Pr(c_j)=\frac{\alpha \times \tau_j + (1-\alpha) \times \eta_j}{\sum \limits_{c_k \in N_i} \alpha \times \tau_k + (1-\alpha) \times \tau_k} \forall c_j \in N_i
 \end{equation}
 
-Since it does not use exponentiation operations this is preferable for performance-targeted frameworks. However, this algorithm may cause undesired biases if the range of the values are not taken into account. The third alternative is invented by Dorigo and Gambardella \cite{dorigo} in Ant Colony System (ACS) algorithm. This approach is also called pseudo-random proportional rule. A random uniform value $q$ is generated in range $[0;1)$ and if $q>q_0$, where $q_0$ is a predefined parameter, then the probability is calculated according to formula \eqref{eq:construction_classic}. Otherwise, the solution component is picked as:
+Since it does not use exponentiation operations such choice rule is preferable for performance-targeted frameworks. However, this algorithm may cause undesired biases if the range of the values are not taken into account. The third alternative is invented by Dorigo and Gambardella \cite{dorigo} in Ant Colony System (ACS) algorithm. The rule of solution component choice in ACS is also called pseudo-random proportional rule. A random uniform value $q$ is generated in range $[0;1)$ and if $q>q_0$, where $q_0$ is a predefined parameter, then the probability of choosing $c_j$ is calculated according to formula \eqref{eq:construction_classic}. Otherwise, the solution component is picked as:
 
 \begin{equation}
 c_j = \operatornamewithlimits{argmax}\limits_{c_k \in N_i} t_k^\alpha \times \eta_k^\beta
@@ -68,17 +68,15 @@ Apparently, larger $q_0$ gives more greedy choice.
 
 \subsection{Construction extensions}
 
-\textbf{Lookahead} conception was introduced. Is says that at each decision step several solution components should be considered at once in order to get the next solution component \cite{lookahead}. Generally it is worth to be implemented when the cost of making a local prediction based on the current partial solution state is much lower than the cost of the real execution of the move sequence.
+\textbf{Lookahead} conception was introduced. It says that at each decision step several solution components should be considered at once in order to get the next solution component \cite{lookahead}. This says that in constructing a candidate solution, ants use a transition rule that incorporates complete information on past decisions (\emph{the trail}) and local information (\emph{visibility}) on the immediate decision that is to be made \cite{lookahead2}. The look-ahead mechanism allows the incorporation of information of the anticipated decisions that are beyond the immediate choice horizon. Generally, it is worth to be implemented when the cost of making a local prediction based on the current partial solution state is much lower than the cost of the real execution of the move sequence.
 
-\textbf{A candidate list} restricts the solution component set to a smaller set to be considered. The solution components in this list have to be the most promising at the current step \cite{candidate_list}. Usually this approach yields a significant gain depending on the initial set-up (i.e. if this list is precalculated once before the run). Nonetheless it can also depend on the current partial solution. For TSP it is represented as nearest neighbor list for each of the cities.
+\textbf{A candidate list} restricts the solution component set to a smaller set to be considered. The solution components in this list have to be the most promising ones at the current step \cite{candidate_list}. Usually, this approach yields a significant gain of computation time, depending on the initial set-up (i.e. if this list is precalculated once before the run). Nonetheless, it can also depend on the current partial solution. For the TSP it is represented as the nearest neighbor list for each of the cities.
 
-\textbf{Hash table} of pheromone trails. It allows to efficiently save memory when the updated pheromone trails are is a sparse set in comparison to the set of all solution components. Search and updating of the elements of the hash-table is expected to be done within linear time \cite{hash_table}.
+\textbf{Hash table} of pheromone trails. It allows to efficiently save memory when the updated pheromone trails are in a sparse set in comparison to the set of all solution components. Search and updating of the elements of the hash-table is expected to be done within linear time \cite{hash_table}.
 
-\textbf{Heuristic precomputation} of the values $t_j^\alpha \times \eta_j^\beta$ for each of the solution components which are used in formula \eqref{eq:construction_dorigo}. The gain is based on the fact that all these exponentially-computed values will be shared by the ants at each iteration.
+\textbf{Heuristic precomputation} of the values $t_j^\alpha \times \eta_j^\beta$ for each of the solution components which are used in formula \eqref{eq:construction_dorigo}. The reduction of computation time is based on the fact that all these values will be shared by the ants at each iteration.
 
-The following extensions (iterated greedy extensions) are based on the starting from a partially constructed solution with partial destroying of a certain good solution and reconstructing it and thus anticipating to obtain even a better solution \cite{iterated_greedy}.
-
-\textbf{External memory} extension is inspired by genetic algorithms and described in \cite{external_memory}. It uses reinforcement procedures of the elite solutions with deferred reintroducing of solutions segments in following iterations (see listing \ref{lst:ext-mem}). The ACO iteration is composed of two stages. First is meant to initialize the external memory. The second is the solution construction itself based on a partial solution.
+\textbf{External memory} extension is based on the starting from a partially constructed solution with partial destroying of a certain good solution and reconstructing it and thus anticipating to obtain even a better solution \cite{iterated_greedy}. This iterated greedy extension was inspired by genetic algorithms and described in \cite{external_memory}. It uses reinforcement procedures of the elite solutions with deferred reintroducing of solutions segments in following iterations (see listing \ref{lst:ext-mem}). The ACO iteration is composed of two stages. First is meant to initialize the external memory. The second is the solution construction itself based on a partial solution. \textbf{Iterated ants} also uses the partially constructed solutions. Based on the following additional notions. Destruct() removes some solution components from a complete solution \cite{iterated_ants}. Constuct() constructs a complete solution from initially partial solution. Acceptance-criterion chooses one of two complete solutions in order to continue the construction with it. Concrete implementations of these strategies are defined in problem-specific way. The algorithm of the extension is showed in listing \ref{lst:iterated-ants}. \textbf{Cunning ants} algorithm tackles to the solution generation by iterated producing of new ant population. The algorithm has a pheromone database and an ant population of fixed size. For every existing ant, a new one is produced which borrows some solution parts from its parent \cite{cunning_ants}. Then in each such ant pair a winner is selected and all winners continue their work in the next iteration. After each iteration all winners jointly update the pheromone database and stop if the termination criteria is met. Similarly the solution component inheritance process is problem-specific. 
 
 \begin{minipage}[c, breaklines=true]{0.95\textwidth}
 \begin{lstlisting}[caption={External memory iteration pseudo-code}, label={lst:ext-mem}]
@@ -101,10 +99,9 @@ end
 \end{lstlisting}
 \end{minipage}
 
-\textbf{Iterated ants}. Based on the following additional notions. Destruct() removes some solution components from a complete solution \cite{iterated_ants}. Constuct() constructs a complete solution from initially partial solution. Acceptance-criterion chooses one of two complete solutions in order to continue the construction with it. Concrete implementations of these strategies are defined in problem-specific way. The algorithm of the extension is showed in listing \ref{lst:iterated-ants} 
 
 \begin{minipage}[c, breaklines=true]{0.95\textwidth}
-\begin{lstlisting}[caption={General ACO pseudo-code}, label={lst:iterated-ants}]
+\begin{lstlisting}[caption={General iterated ants pseudo-code}, label={lst:iterated-ants}]
 procedure iterated-ants
 	s0 = initial-solution()
 	s = local-search(s0)
@@ -118,14 +115,10 @@ end
 \end{lstlisting}
 \end{minipage}
 
-\textbf{Cunning ants}.
-
-Cunning ants algorithm tackles to the solution generation by iterated producing of new ant population. The algorithm has a pheromone database and an ant population of fixed size. For every existing ant, a new one is produced which borrows some solution parts from its parent \cite{cunning_ants}. Then in each such ant pair a winner is selected and all winners continue their work in the next iteration. After each iteration all winners jointly update the pheromone database and stop if the termination criteria is met. Similarly the solution component inheritance process is problem-specific.
-
 
 
 \subsection{Global pheromone update}
-As it was told the key moment of the algorithm is the pheromone trail biasing. It is composed of two parts - pheromone evaporation and pheromone deposit. Pheromone evaporation decreases the values in order to reduce the impact of the previously deposited solutions. The general form formula is as follows.
+The central idea of the ACO algorithm is the pheromone trail biasing. It is composed of two parts - pheromone evaporation and pheromone deposit. Pheromone evaporation decreases the values in order to reduce the impact of the previously deposited solutions. The general form formula is as follows.
 
 \begin{equation}
 \tau_{new}=evaporation(\tau_{old}, \rho, S^{eva})
