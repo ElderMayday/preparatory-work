@@ -74,7 +74,26 @@ The section 8 concludes the report and proposes further possible contributions i
 
 \input{section-2}
 \input{section-3}
-\input{section-4}
+
+\section{Applications of ACO to other problem types}
+Initially ACO algorithms were meant to solve single-objective combinatorial optimization problems. However, ACO algorithms can be applied to other problem types.
+
+
+\textbf{Continuous Optimization Problems}. The simplest way to solve COPs by means of ACO algorithms is to approximate the problem to its discrete analogue, however, it cannot be applied to certain problems. Some adaptations are carried out by Socha and Dorigo \cite{aco_continuous}. Another model was presented by Liao\cite{aco_incremental}.
+
+\textbf{Multi-objective problems} are problems that have several objective functions which sometimes have a deterministic preference model or demand the Pareto set as the solution. In practice, such problems normally do not have a preference of one Pareto-optimal solutions over others. For example, one of such problems which has been solved is bi-objective Traveling Salesman Problem (bTSP). This problem is identical to the original TSP, except that it has two length markups for each edge, and each of two objective functions corresponds to tour length is estimated by one of these length markups.
+
+So far, various multi-objective ACO algorithms have been developed. Several ACO algorithms for resolving such problems were reviewed in the paper of L{\'o}pez-Ib{\'a}{\~n}ez and Thomas St{\"u}tzle \cite{moaco}. Different MOACO algorithms implement different design choices and, therefore, have different algorithmic components. This was the reason to implement a unified flexible framework. The developed MOACO framework encompasses many MOACO algorithms. This framework allows either to instantiate MOACO algorithms based on the existing ones, or to combine algorithmic components from different MOACO algorithms to produce new ones.
+
+For solution component choice the possible options are \emph{single/multiple pheromone trails and single/multiple heuristic information}. Since multiple pheromone matrices need to be aggregated into a single one, it is necessary to choose the aggregation rule. That can be \emph{weighted sum/weighted product/random/next-weight aggregation}. As for selecting a solution for pheromone information update one can choose \emph{non-dominated solutions/ best-of-objective/best-of-objective-per-weight}.
+
+Many MOACO algorithms use the idea of multiple colonies with different application of those. A colony is a group within the total ant population. Each such group is associated to its own pheromone information. Thus, in bi-objective case each colony has two pheromone matrices. The following algorithmic components define cooperation behavior of colonies. \emph{MultiColonyWeights} defines how the colonies share the weights that are defined at the aggregation step. \emph{MultiColonyUpdate} defines the notion of solution archive where the solutions from colonies are submitted. After this they are redistributed back to the colonies for pheromone information update. Thus, the colonies exchange the solutions between each other.
+
+
+\textbf{Dynamic problems} are the problems that have some information revealed during the execution. These problems are resolved in a strongly different manner - ants act asynchronously and no global pheromones are updated, instead specific update mechanisms are held.
+
+\textbf{Stochastic problems} deal with information that is not deterministic. Such problems as probabilistic TSP where for each city there is a given probability that it is required to visit.
+
 
 
 
