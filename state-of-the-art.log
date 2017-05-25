@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  24 MAY 2017 19:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  25 MAY 2017 02:26
 entering extended mode
 **./state-of-the-art.tex
 (state-of-the-art.tex
@@ -20,6 +20,9 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\bibentry.sty"
+Package: bibentry 2007/10/30 1.5 (PWD)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -570,27 +573,27 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 (state-of-the-art.aux)
 \openout1 = `state-of-the-art.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 50.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -600,9 +603,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (state-of-the-art.out) (state-of-the-art.out)
 \@outlinefile=\write3
@@ -706,63 +709,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
  []
 
 [13] [14] [15])
-Overfull \hbox (6.89363pt too wide) in paragraph at lines 78--78
+Overfull \hbox (6.89363pt too wide) in paragraph at lines 81--81
 []\OT1/cmr/bx/n/17.28 Applications of ACO to other prob-lem types 
  []
 
 [16]
-Overfull \hbox (27.53255pt too wide) in paragraph at lines 88--89
+Overfull \hbox (27.53255pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/12 product/random/next-weight ag-gre-ga-tion\OT1/cmr/m/n/12 . As 
 for se-lect-ing a so-lu-tion for pheromone
  []
 
 
-Overfull \hbox (29.36847pt too wide) in paragraph at lines 88--89
+Overfull \hbox (29.36847pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/n/12 in-for-ma-tion up-date one can choose \OT1/cmr/m/it/12 non-domi
 nated so-lu-tions/ best-of-objective/best-
  []
 
 [17] [18]
-Overfull \hbox (2.1288pt too wide) in paragraph at lines 114--115
-[]\OT1/cmr/m/n/12 Another re-mark-able frame-work is SATen-stein. It can solve 
-single-objective
- []
 
-<images/configuration-top-level.png, id=315, 493.845pt x 348.30125pt>
+LaTeX Warning: Citation `satenstein' on page 19 undefined on input line 117.
+
+[19] <images/configuration-top-level.png, id=325, 493.845pt x 348.30125pt>
 File: images/configuration-top-level.png Graphic file (type png)
 
 <use images/configuration-top-level.png>
 Package pdftex.def Info: images/configuration-top-level.png used on input line 
-131.
+134.
 (pdftex.def)             Requested size: 345.68913pt x 243.8092pt.
- [19]
-<images/irace.jpg, id=326, 140.70265pt x 168.84319pt>
+ [20 <./images/configuration-top-level.png>] <images/irace.jpg, id=336, 140.702
+65pt x 168.84319pt>
 File: images/irace.jpg Graphic file (type jpg)
- <use images/irace.jpg>
-Package pdftex.def Info: images/irace.jpg used on input line 162.
-(pdftex.def)             Requested size: 168.8423pt x 202.6108pt.
 
-[20 <./images/configuration-top-level.png>] [21 <./images/irace.jpg>] [22]
-[23]
+<use images/irace.jpg>
+Package pdftex.def Info: images/irace.jpg used on input line 165.
+(pdftex.def)             Requested size: 168.8423pt x 202.6108pt.
+ [21 <./images/irace.jpg>] [22] [23]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no “ in font cmti12!
  [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
  [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
- (state-of-the-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
+
+(state-of-the-art.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `state-of-the-art.out' has not changed.
 (rerunfilecheck)             Checksum: 7D2991BB8671B7FD631006A36D211855;1473.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 299.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
- 16941 strings out of 493333
- 293803 string characters out of 3139195
- 454167 words of memory out of 3000000
- 20197 multiletter control sequences out of 15000+200000
+ 16969 strings out of 493333
+ 294305 string characters out of 3139195
+ 454772 words of memory out of 3000000
+ 20218 multiletter control sequences out of 15000+200000
  11589 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,42p,10425b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -779,9 +794,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-the-art.pdf (25 pages, 330348 bytes).
+Output written on state-of-the-art.pdf (26 pages, 333890 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 500000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

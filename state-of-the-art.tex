@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{bibentry}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{hyperref}
@@ -9,6 +10,9 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{tabularx}
+
+
+
 
 \lstset{
     frame=single,
@@ -60,7 +64,6 @@ Some animal species show an extreme degree of social organization. Such species 
 
 \section{Introduction}
 
-
 REDO introduction!!!
 
 In this report we display the current research state of the Ant Colony Optimization frameworks that solve optimization problems and their configuration. To do that we split the report into several sections which will represent different practical points of the ACO application. \\
@@ -89,10 +92,12 @@ For solution component choice the possible options are \emph{single/multiple phe
 
 Many MOACO algorithms use the idea of multiple colonies with different application of those. A colony is a group within the total ant population. Each such group is associated to its own pheromone information. Thus, in bi-objective case each colony has two pheromone matrices. The following algorithmic components define cooperation behavior of colonies. \emph{MultiColonyWeights} defines how the colonies share the weights that are defined at the aggregation step. \emph{MultiColonyUpdate} defines the notion of solution archive where the solutions from colonies are submitted. After this they are redistributed back to the colonies for pheromone information update. Thus, the colonies exchange the solutions between each other.
 
+As it was said, these algorithmic components are combined in order to obtain new MOACO algorithms, and therefore, it is possible to perform an automatic configuration of these algorithms.
 
-\textbf{Dynamic problems} are the problems that have some information revealed during the execution. These problems are resolved in a strongly different manner - ants act asynchronously and no global pheromones are updated, instead specific update mechanisms are held.
 
-\textbf{Stochastic problems} deal with information that is not deterministic. Such problems as probabilistic TSP where for each city there is a given probability that it is required to visit.
+\textbf{Dynamic problems} are problems that have some information (such as data or objectives) revealed in time. Such problems are usually encountered in network routing. In problems like dynamic TSP and dynamic vehicle routing problem cities appear and disappear during the solution, as well as distances between them. These problems are resolved in a strongly different manner - ants act asynchronously and no global pheromones are updated, instead specific update mechanisms are held. An overview of ACO algorithms in application to dynamic optimization problems was done by Alba Leguizam{\'o}n in \cite{dynamic_overview}.
+
+\textbf{Stochastic problems} deal with information that is not deterministic. Such problems mean that instead of deterministic values of the problem data and objectives, we have their probability distribution. In practice such problems are caused by uncertainty or noise affecting the problem information. The first stochastic problem to deal with was probabilistic TSP (pTSP), where for each city there is a given probability that it is required to visit. The first algorithm was proposed by Bianchi in \cite{bianchi_stochastic_tsp} with further development by Guntsch and Branke in \cite{guntsch_stochastic}.
 
 
 
@@ -103,17 +108,15 @@ Many MOACO algorithms use the idea of multiple colonies with different applicati
 
 \subsection{ACOTSPQAP}
 
-ACOTSP unified framework was developed by IRIDIA group. It was developed with tendency towards the purpose and component generality. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$). All these parameters are to be tuned by an external configuration software.
+ACOTSPQAP is a unified framework that was developed by researchers of the IRIDIA group, which is publicly available at http://iridia.ulb.ac.be/aco-tsp-qap/. It was developed with aim to provide generality of algorithmic components of ACO algorithms. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$). All these parameters are to be tuned by an external configuration software.
 
 \subsection{Other frameworks}
 
-The MOACO framework was briefly described in the previous section. Besides there are some other optimization frameworks which have different features.
+The \textbf{MOACO} framework was briefly described in the section 4. Besides there are some other optimization frameworks which have different features.
 
-Multi-objective Bat Algorithm (MOBA) is based on the natural traits of bat behavior. Bat emits waves in the space which allow it to find the prey location. The bat speed, the emission  frequency and emission amplitude are the parameters which the bat is able to steer. When a bat finds a potential prey it increases the frequency and decreases the amplitude and therefore is able to locate it more precisely. In optimization problem a similar action is being done by a bat when it "flies" within the parameter search space. The general purpose of MOBA is to find the Pareto Front of the parameters \cite{moba}.
+Another remarkable framework is \textbf{SATenstein}. It is based on solving satisfiability problem (SAT) of a boolean formula. SAT problem is considered important because other NP-complete problems can be encoded as instances of SAT problem. Various Stochastic Local Search (SLS) algorithms have been developed for solving SAT problems. The SATenstein can be configured to instantiate a broad range of existing high-performance SLS-based solvers \cite{satenstein}. The general form of SLS algorithm is made of five blocks. First block performs search diversification. Blocks from the second to the fourth perform a variable flip with instantiating $G^2$WSAT-derived, WalkSAT-based or dynamic local search algorithm respectively. The fifth block performs updates to the promising variable list, tabu attributes, clause penalties or dynamically adapted algorithm parameters. Thus, a high-performing SLS algorithm can be assembled of such algorithmic blocks in SATenstein. A generic algorithmic configuration tool was applied to SATenstein for finding best algorithm instantiations for predefined sets, which is described in the mentioned paper.
 
-Another remarkable framework is SATenstein. It can solve single-objective optimization problems. It is based on solving satisfiability problem of a boolean formula.
-
-Hybrid Stochastic Local Search (SLS) algorithms are based on decomposition of single-point SLS methods into separate components with generalized metaheuristic structure.
+\textbf{Hybrid Stochastic Local Search} (SLS) algorithms, as in the previously mentioned frameworks, are composed of the algorithmic components.
 
 
 \section{Automatic configuration in IRACE}
@@ -228,12 +231,12 @@ Vast research work has been already conducted in terms of ACO algorithms. Many t
 
 Various ways of further area research can be proposed. The possible way is to implement resolution algorithms for new NP-hard problems within ACO framework. Such practical problems as Vehicle Routning Problem, Subset Sum Problem or Knapsack Problem.
 
-From technical point of view we can propose implementing a new framework using object-oriented paradigm which will ensure high modularity and modification-proneness. Another option is to implement the ACO algorithm stages as parallel algorithms (stages like solution generation or local search).
+From technical point of view we can propose implementing a new framework using object-oriented paradigm which will ensure high modularity and modification-proneness. Another option is to implement the ACO algorithm stages as parallel algorithms (stages like solution generation or local search). 
+
 
 
 
 \begin{thebibliography}{1}
-
 
 \bibitem{aco_overview} Manuel L{\'o}pez-Ib{\'a}{\~n}ez and Thomas St{\"u}tzle {\em Ant Colony Optimization: A Component-Wise Overview} 2015: IRIDIA - Technical Report Series.
 
@@ -284,7 +287,14 @@ Computation Conference.
 \bibitem{moaco} L{\'o}pez-Ib{\'a}{\~n}ez M, St{\"u}tzle T {\em The automatic design of multi-objective ant colony optimization algorithms} 2012: IEEE Transactions on Evolutionary Computation.    
   
 \bibitem{moba} Xin-She Yang {\em Bat Algorithm for Multi-objective Optimisation} 2011: Department of Engineering, University of Cambridge.  
+
+\bibitem{dynamic_overview} Leguizam{\'o}n G, Alba E (2013) Ant colony based algorithms for dynamic optimization problems. In: Alba E, Nakib A, Siarry P (eds) Metaheuristics for Dynamic Optimization, Studies in Computational Intelligence, vol 433, Springer, Berlin/Heidelberg, pp 189–210
  
+\bibitem{bianchi_stochastic_tsp} Bianchi L, Gambardella LM, Dorigo M (2002) An ant colony optimization approach to the probabilistic traveling salesman problem. In: Merelo JJ, et al (eds) Parallel Problem Solving from Nature, PPSN VII, Springer, Heidelberg, Germany, Lecture Notes in Computer Science, vol 2439, pp 883–892
+
+\bibitem{guntsch_stochastic} Guntsch M, Branke J (2003) New ideas for applying ant colony optimization to the probabilistic tsp. In: Cagnoni S, et al (eds) Applications of Evolutionary Computing, Proceedings of EvoWorkshops 2003, Springer, Heidelberg, Germany, Lecture Notes in Computer Science, vol 2611, pp 165–175
+
+
  
 \bibitem{external_memory} Dorigo, Marco
 and Birattari, Mauro
