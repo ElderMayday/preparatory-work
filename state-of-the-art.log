@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  25 MAY 2017 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  25 MAY 2017 19:16
 entering extended mode
 **./state-of-the-art.tex
 (state-of-the-art.tex
@@ -693,12 +693,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 ) (section-3.tex [6]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 13.
- [7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 35--42
 
  []
 
-[8] [9] [10] [11]
+[7] [8] [9] [10] [11]
 Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
@@ -709,18 +709,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
  []
 
 [13] [14] [15])
-Overfull \hbox (6.89363pt too wide) in paragraph at lines 81--81
+Overfull \hbox (6.89363pt too wide) in paragraph at lines 80--80
 []\OT1/cmr/bx/n/17.28 Applications of ACO to other prob-lem types 
  []
 
 [16]
-Overfull \hbox (27.53255pt too wide) in paragraph at lines 91--92
+Overfull \hbox (27.53255pt too wide) in paragraph at lines 90--91
 \OT1/cmr/m/it/12 product/random/next-weight ag-gre-ga-tion\OT1/cmr/m/n/12 . As 
 for se-lect-ing a so-lu-tion for pheromone
  []
 
 
-Overfull \hbox (29.36847pt too wide) in paragraph at lines 91--92
+Overfull \hbox (29.36847pt too wide) in paragraph at lines 90--91
 \OT1/cmr/m/n/12 in-for-ma-tion up-date one can choose \OT1/cmr/m/it/12 non-domi
 nated so-lu-tions/ best-of-objective/best-
  []
@@ -731,14 +731,14 @@ File: images/configuration-top-level.png Graphic file (type png)
 
 <use images/configuration-top-level.png>
 Package pdftex.def Info: images/configuration-top-level.png used on input line 
-144.
+143.
 (pdftex.def)             Requested size: 345.68913pt x 243.8092pt.
  [21 <./images/configuration-top-level.png>] <images/irace.jpg, id=344, 140.702
 65pt x 168.84319pt>
 File: images/irace.jpg Graphic file (type jpg)
 
 <use images/irace.jpg>
-Package pdftex.def Info: images/irace.jpg used on input line 175.
+Package pdftex.def Info: images/irace.jpg used on input line 174.
 (pdftex.def)             Requested size: 168.8423pt x 202.6108pt.
  [22 <./images/irace.jpg>] [23] [24] [25]
 Missing character: There is no â in font cmti12!
@@ -757,16 +757,16 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ´ in font cmr12!
  [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
 
 [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (state-of-the-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `state-of-the-art.out' has not changed.
 (rerunfilecheck)             Checksum: 7D2991BB8671B7FD631006A36D211855;1473.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
  16974 strings out of 493333
@@ -789,7 +789,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-the-art.pdf (28 pages, 339098 bytes).
+Output written on state-of-the-art.pdf (28 pages, 339509 bytes).
 PDF statistics:
  471 PDF objects out of 1000 (max. 8388607)
  160 named destinations out of 1000 (max. 500000)

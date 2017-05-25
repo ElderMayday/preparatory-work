@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}
 \contentsline {section}{\numberline {2}Combinatorial Optimization Problems and Constructive Heuristics}{4}{section.2}
-\contentsline {section}{\numberline {3}Ant Colony Optimization}{7}{section.3}
+\contentsline {section}{\numberline {3}Ant Colony Optimization}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Choice of pheromone trails and heuristic information}{8}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Solution component choice}{8}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Construction extensions}{9}{subsection.3.3}
@@ -17,4 +17,4 @@
 \contentsline {section}{\numberline {7}Research state}{23}{section.7}
 \contentsline {subsection}{\numberline {7.1}Finding a better ACO configuration for the TSP}{24}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Finding a better ACO configuration for the QAP}{24}{subsection.7.2}
-\contentsline {section}{\numberline {8}Conclusions}{24}{section.8}
+\contentsline {section}{\numberline {8}Conclusions}{25}{section.8}
