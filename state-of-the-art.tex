@@ -110,6 +110,14 @@ As it was said, these algorithmic components are combined in order to obtain new
 
 ACOTSPQAP is a unified framework that was developed by researchers of the IRIDIA group, which is publicly available at http://iridia.ulb.ac.be/aco-tsp-qap/. It was developed with aim to provide generality of algorithmic components of ACO algorithms. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$). All these parameters are to be tuned by an external configuration software.
 
+Algorithmic frameworks can be classified as one of these two (although their distinction is ambiguous in particular cases):
+\begin{itemize}
+\item Top-down - develop a fixed template-based algorithm. It is based on strictly structured algorithm which allows some parametric configuration of some of its details with minor behavior modifications.
+\item Bottom-up - algorithm is build of flexible components with some rule restrictions. Often involves application of genetic programming and evolution ideas.
+\end{itemize}
+
+ACOTSPQAP can be classified as the first one, since its stages (solution generation, local search, pheromone trail update) are concretely defined and its parameters are strongly determined.
+
 \subsection{Other frameworks}
 
 The \textbf{MOACO} framework was briefly described in the section 4. Besides there are some other optimization frameworks which have different features.
@@ -124,10 +132,12 @@ Another remarkable framework is \textbf{SATenstein}. It is based on solving sati
 Automatic configuration is a process that optimizes the performance of a certain algorithm as a goal function based on input parameters of the algorithm. The general parameter types are:
  
 \begin{itemize}
-\item \textbf{categorical} parameters - define the choice of constructive procedure, choice of branching strategies (i. e. algorithmic blocs) and so on.
-\item \textbf{ordinal} parameters - define lower bounds, neighborhoods.
+\item \textbf{categorical} parameters - represent discrete values without any implicit order or distance measure between its possible values. Define the choice of constructive procedure, choice of branching strategies (i. e. algorithmic blocs) and so on. An example of such parameter in ACO algorithms is recombination operators in EAS.
+\item \textbf{ordinal} parameters - are also assigned to finite discrete values, but they have implicit value order (such as \emph{low, middle, high}). Define lower bounds, neighborhoods.
 \item \textbf{numerical} parameters - define integer or real values/constants such as weighting factors, population sizes, temperature. They can be optional according to different categorical parameter values.
 \end{itemize}
+
+Some of the parameters may subordinate to the other ones. This means that their values only make sense if the parameters they subordinate to are assigned to certain values. This can be expressed as scalar value constraints (e.g $a < b$) or dependency on concrete values of some categorical or ordinal parameter.
 
 \begin{figure}[H]
   \centering
@@ -136,15 +146,15 @@ Automatic configuration is a process that optimizes the performance of a certain
   \label{fig:autoconf}
 \end{figure}
 
-Figure \ref{fig:autoconf} shows software composition of the analyzed program and configuration script. Configuration script has parameter metadata in its disposal. Based on them, the configuration software runs the software to configure with candidate configurations one by one according to the higher-mentioned racing algorithm. The result of the run is the solution cost of cumulative runs of the algorithm on the defined problem instances. After the racing process finishes, the configuration software renders the best configuration obtained. In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize).
+Figure \ref{fig:autoconf} shows software composition of the configuration software and software to configure. Configuration script has parameter metadata in its disposal. Based on them, the configuration software runs the software to configure with candidate configurations according to some algorithm. After the configuration process finishes, the configuration software renders the best configuration obtained. In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize).
 
 There are two application modes:
 \begin{itemize}
-\item Offline tuning - introduces a learning stage on training instances before learning on the actual set.
-\item Online tuning - tunes the parameters while solving the actual instance set.
+\item Offline tuning - introduces a learning stage on training instances before learning on the real-world set.
+\item Online tuning - tunes the parameters while solving the real-world instance set.
 \end{itemize}
 
-A widely used configuration algorithmic family is racing algorithms. The simplified algorithm is shown in \ref{lst:racing} and an illustration is showed in \ref{fig:irace}.
+A widely used configuration algorithmic family is racing algorithms. The simplified algorithm is shown in \ref{lst:racing} and an illustration is in \ref{fig:irace}.
 
 
 \begin{minipage}[c, breaklines=true]{0.95\textwidth}
@@ -168,14 +178,22 @@ end
 \end{figure}
 
 
-I-RACE(iterated race) implementation has already been developed and applied for the ACO problem in \cite{iraceaac}. It was implemented in R with taking into account the parallel programming techniques and initial candidate set-up. The feature of the IRACE is based on iterated generation of new configurations and removing of solutions with less fitness for further evaluating on the problem instances.
+I-RACE (iterated race) configuration implementation was developed and described in \cite{iraceaac}. It was implemented in R with taking into account the parallel programming techniques and initial candidate set-up. The feature of the IRACE is based on iterated generation of new configurations and removing of solutions with lower quality for further evaluating on the problem instances.
 
+In order to tune the configurations that are sampled, IRACE algorithms uses independent sampling distribution for each of the parameters. For numeric values those are normal distributions and discretely-defined for the rest. The configuration biasing procedure is based on modifying the sampling distributions.
 
-Two conceptual approaches can be remarked (although their distinction is ambiguous in particular cases):
+Iterated racing is an automatic configuration implementation that consists from three steps:
+
 \begin{itemize}
-\item Top-down - develop a fixed template-based algorithm. It is based on strictly structured algorithm which allows some parametric configuration of some of its details with minor behavior modifications.
-\item Bottom-up - algorithm is build of flexible components with some rule restrictions. Often involves application of genetic programming and evolution ideas.
+\item Sampling new configurations according to a particular distribution.
+\item Selecting the best configurations from the newly sampled ones by means of racing.
+\item Updating the sampling distribution in order to bias the sampling towards the best configurations.
 \end{itemize}
+
+After new configurations are sampled comes the selection stage. At configuration selection stage, IRACE runs each of the configurations on a single problem instance from the predefined instance set. After each racing iteration the worst configurations are discarded. Then the rest of the configurations update parameter sampling distributions. The racing stops when the number of the survived configurations becomes small enough.  
+
+Some IRACE extensions can be applied. \textbf{Initial configurations} can be set before the run of the IRACE. \textbf{Soft-restart} is used for preventing premature convergence. Such convergence may suppresses configuration diversity and, therefore good configurations may be lost. This restart is triggered if the value of an ad hoc configuration distance function is lower than a certain margin. Then reinitialization is applied to the elite configurations.
+
 
 \section{Research state}
 
