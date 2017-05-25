@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  25 MAY 2017 02:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.1)  25 MAY 2017 03:06
 entering extended mode
 **./state-of-the-art.tex
 (state-of-the-art.tex
@@ -725,59 +725,54 @@ Overfull \hbox (29.36847pt too wide) in paragraph at lines 91--92
 nated so-lu-tions/ best-of-objective/best-
  []
 
-[17] [18]
-
-LaTeX Warning: Citation `satenstein' on page 19 undefined on input line 117.
-
-[19] <images/configuration-top-level.png, id=325, 493.845pt x 348.30125pt>
+[17] [18] [19]
+<images/configuration-top-level.png, id=329, 493.845pt x 348.30125pt>
 File: images/configuration-top-level.png Graphic file (type png)
 
 <use images/configuration-top-level.png>
 Package pdftex.def Info: images/configuration-top-level.png used on input line 
 134.
 (pdftex.def)             Requested size: 345.68913pt x 243.8092pt.
- [20 <./images/configuration-top-level.png>] <images/irace.jpg, id=336, 140.702
-65pt x 168.84319pt>
+ [20]
+<images/irace.jpg, id=338, 140.70265pt x 168.84319pt>
 File: images/irace.jpg Graphic file (type jpg)
-
-<use images/irace.jpg>
+ <use images/irace.jpg>
 Package pdftex.def Info: images/irace.jpg used on input line 165.
 (pdftex.def)             Requested size: 168.8423pt x 202.6108pt.
- [21 <./images/irace.jpg>] [22] [23]
+
+[21 <./images/configuration-top-level.png>] [22 <./images/irace.jpg>] [23]
+[24]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no “ in font cmti12!
- [24]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
  [25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
  [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
-
-(state-of-the-art.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ´ in font cmr12!
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+ (state-of-the-art.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `state-of-the-art.out' has not changed.
 (rerunfilecheck)             Checksum: 7D2991BB8671B7FD631006A36D211855;1473.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 16969 strings out of 493333
- 294305 string characters out of 3139195
- 454772 words of memory out of 3000000
- 20218 multiletter control sequences out of 15000+200000
+ 16973 strings out of 493333
+ 294342 string characters out of 3139195
+ 454832 words of memory out of 3000000
+ 20219 multiletter control sequences out of 15000+200000
  11589 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,42p,10425b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -794,9 +789,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on state-of-the-art.pdf (26 pages, 333890 bytes).
+Output written on state-of-the-art.pdf (27 pages, 337129 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

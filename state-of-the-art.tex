@@ -116,7 +116,7 @@ The \textbf{MOACO} framework was briefly described in the section 4. Besides the
 
 Another remarkable framework is \textbf{SATenstein}. It is based on solving satisfiability problem (SAT) of a boolean formula. SAT problem is considered important because other NP-complete problems can be encoded as instances of SAT problem. Various Stochastic Local Search (SLS) algorithms have been developed for solving SAT problems. The SATenstein can be configured to instantiate a broad range of existing high-performance SLS-based solvers \cite{satenstein}. The general form of SLS algorithm is made of five blocks. First block performs search diversification. Blocks from the second to the fourth perform a variable flip with instantiating $G^2$WSAT-derived, WalkSAT-based or dynamic local search algorithm respectively. The fifth block performs updates to the promising variable list, tabu attributes, clause penalties or dynamically adapted algorithm parameters. Thus, a high-performing SLS algorithm can be assembled of such algorithmic blocks in SATenstein. A generic algorithmic configuration tool was applied to SATenstein for finding best algorithm instantiations for predefined sets, which is described in the mentioned paper.
 
-\textbf{Hybrid Stochastic Local Search} (SLS) algorithms, as in the previously mentioned frameworks, are composed of the algorithmic components.
+\textbf{Hybrid Stochastic Local Search} (SLS) algorithms, as in the previously mentioned frameworks, are composed of the separate algorithmic components. These algorithms rely on the manipulating a single solution called \emph{current solution}. The neighborhood of the current solution will be explored during the algorithm run \cite{hsls}. The first phase of the algorithm is the local search for the initial solution. Then the algorithm iterations start. One iteration consists from \emph{perturbation, local search} and \emph{acceptanceCriterion}. Perturbation is a transformation of the input solution. Perturbation may be implemented as one simple move in neighborhood space, but it may also be composed of $k$ applications of such moves. \emph{Local search} can range from a simple iterative improvement over short runs of an SA algorithm to a full-fledged iterated local search. \emph{Acceptance criterion} returns either the initial solution or the obtained one, according to some condition. The simplest criterion is \emph{improveAccept} accepts the solution with better quality. Other acceptance criteria allow worse solutions to be accepted in order to increase the exploration of the search space. For instance \emph{probAccept} accepts a worsening solution with probability $p \in [0;1]$. These iterations are repeated until a defined termination criterion is fulfilled. As a result, such metaheuristic algorithms are among the most effective non-exact algorithms for tackling hard combinatorial optimization problems.
 
 
 \section{Automatic configuration in IRACE}
@@ -229,7 +229,7 @@ With local search as 2-best-opt.
 
 Vast research work has been already conducted in terms of ACO algorithms. Many types of ACO algorithms and their extensions were developed and tested. However there are still many COPs untouched. In addition, various technical details can be added in order to improve resolution performance or the development experience. 
 
-Various ways of further area research can be proposed. The possible way is to implement resolution algorithms for new NP-hard problems within ACO framework. Such practical problems as Vehicle Routning Problem, Subset Sum Problem or Knapsack Problem.
+Various ways of further area research can be proposed. The possible way is to implement resolution algorithms for new NP-hard problems within ACO framework. Such practical problems as Vehicle Routing Problem, Subset Sum Problem or Knapsack Problem.
 
 From technical point of view we can propose implementing a new framework using object-oriented paradigm which will ensure high modularity and modification-proneness. Another option is to implement the ACO algorithm stages as parallel algorithms (stages like solution generation or local search). 
 
@@ -294,6 +294,10 @@ Computation Conference.
 
 \bibitem{guntsch_stochastic} Guntsch M, Branke J (2003) New ideas for applying ant colony optimization to the probabilistic tsp. In: Cagnoni S, et al (eds) Applications of Evolutionary Computing, Proceedings of EvoWorkshops 2003, Springer, Heidelberg, Germany, Lecture Notes in Computer Science, vol 2611, pp 165–175
 
+\bibitem{hsls} Marie-El´eonore Marmion, Franco Mascia,
+Manuel L{\'o}pez-Ib{\'a}{\~n}ez, and Thomas St{\"u}tzle (2013) IRIDIA, CoDE, Universit{\'e} Libre de Bruxelles (ULB), Brussels, Belgium, pp 144-158
+
+\bibitem{satenstein} . R. KhudaBukhsh, L. Xu, H. H. Hoos, K. Leyton-Brown (2009) SATenstein: Automatically Building Local Search SAT Solvers From Components, Twenty-First International Joint Conference on Artificial Intelligence (IJCAI-09)
 
  
 \bibitem{external_memory} Dorigo, Marco
