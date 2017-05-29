@@ -56,7 +56,7 @@
 \newpage
 
 \begin{abstract}
-Some animal species show an extreme degree of social organization. Such species (e.g. ants) have pheromone production and detection body parts and therefore seize an ability to communicate between each other in an indirect way. This concept has inspired the development of algorithms, which are based on the social behavior of the ant colonies called ant colony optimization algorithms. These algorithms allow to solve NP-hard problems in a very efficient manner. These algorithms are considered to be metaheuristics. The development of an ACO framework is the next step of formalizing this area. Such a framework can then be used as a tool to help resolving various optimization problems. This report gives a brief overview of the current state of the ACO research area, existing framework description and some tools which can be used for the automatic configuration of the framework.
+Some species show an extreme degree of social organization. Such species (e.g. ants) have pheromone production and detection body parts and therefore seize an ability to communicate between each other in an indirect way. This concept has inspired the development of algorithms, which are based on the social behavior of the ant colonies called ant colony optimization algorithms. These algorithms allow to solve NP-hard problems in a very efficient manner. These algorithms are considered to be metaheuristics. The development of an ACO framework is the next step of formalizing this area. Such a framework can then be used as a tool to help resolving various optimization problems. This report gives a brief overview of the current state of the ACO research area, existing framework description and some tools which can be used for the automatic configuration of the framework.
 \end{abstract}
 
 
@@ -66,13 +66,13 @@ Some animal species show an extreme degree of social organization. Such species 
 
 
 
-Metaheuristic algorithms are widely used for solving such difficult problems as NP-hard problems, since exact solving of such problems takes unreasonable computational time. One family of such algorithms is the Ant Colony Optimization algorithms. These algorithms comprise a various set of options, that affect the final performance of the algorithm. Thus, it is a logical decision to develop a unified framework which tackles to ACO algorithmic components. After developing such a framework, next step is to create a tuning tool that will observe the configurations space of ACO algorithms and select the best ones, in order to improve the quality of obtaining solutions.
-In this report we display the current research state of the Ant Colony Optimization frameworks that solve optimization problems and their configuration. To do that we split the report into several sections which will represent different practical points of the ACO application. \\
-In the section 2 we introduce the basic notions of the Combinatorial Optimization Problems and will introduce Traveling Salesman Problem with Quadratic Assignment Problem as examples of NP-hard problems to solve. In the section 3 we provide a description of the Ant Colony Optimization in terms of constructive heuristics with introduction into the main components and choices of this metaheuristic. In the section 4 we describe the application of ACO for different problem classes such as Continuous Optimization Problems, Multi-objective Problems, Dynamic Problems and Stochastic Problems.
-The existing optimization frameworks are described in the section 5, where we describe the ACOTSPQAP framework and some additional frameworks with other purposes.
-Automatic configuration process which is applied "above" the developed ACO algorithms is explained in the section 6.
-In section 7 we list the configurations that were rendered by the configuration process on a test set for both TSP and QAP problems.
-The section 8 concludes the report and proposes further possible contributions into the area.
+Metaheuristic algorithms are widely used for solving such difficult problems as NP-hard problems, since the exact solution of such problems often takes unreasonable computational time in practice. One family of such algorithms is the Ant Colony Optimization algorithms. These algorithms comprise a various set of options, that affect the final performance of the algorithm. Thus, it is a logical decision to develop a unified framework which summarizes ACO algorithmic components for later assembly of ACO algorithms. After developing such a framework, the next step is to create a tuning tool that will observe the configurations space of ACO algorithms and select the best ones, in order to improve the quality of obtained solutions.
+In this report, we display the current research state of the Ant Colony Optimization frameworks that solve optimization problems and their configuration. To do that we split the report into several sections which will represent different practical points of the ACO application. \\
+In the section 2, we introduce the basic notions of  Combinatorial Optimization Problems and will introduce the Traveling Salesman Problem and the Quadratic Assignment Problem as examples of NP-hard problems to solve. In the section 3, we provide a description of Ant Colony Optimization in terms of constructive heuristics with introduction into the main components and choices of this metaheuristic. In the section 4, we describe the application of ACO to different problem classes such as continuous optimization problems, multi-objective problems, dynamic problems and stochastic problems.
+The existing optimization frameworks are described in section 5, where we describe the ACOTSPQAP framework and some additional frameworks with other purposes.
+Automatic configuration process, which is applied "above" the developed ACO algorithms, is explained in the section 6.
+In section 7, we list the configurations that were rendered by the configuration process on a test set for both TSP and QAP problems.
+Section 8 concludes the report and proposes further possible contributions into the area.
 
 \input{section-2}
 \input{section-3}
@@ -81,9 +81,9 @@ The section 8 concludes the report and proposes further possible contributions i
 Initially ACO algorithms were meant to solve single-objective combinatorial optimization problems. However, ACO algorithms can be applied to other problem types.
 
 
-\textbf{Continuous Optimization Problems}. The simplest way to solve COPs by means of ACO algorithms is to approximate the problem to its discrete analogue, however, it cannot be applied to certain problems. Some adaptations are carried out by Socha and Dorigo \cite{aco_continuous}. Another model was presented by Liao\cite{aco_incremental}.
+\textbf{COPs}. The simplest way to solve COPs by means of ACO algorithms is to approximate the problem to its discrete analogue, however, it cannot be applied to certain problems. Some adaptations are carried out by Socha and Dorigo \cite{aco_continuous}. Another model was presented by Liao\cite{aco_incremental}.
 
-\textbf{Multi-objective problems} are problems that have several objective functions which sometimes have a deterministic preference model or demand the Pareto set as the solution. In practice, such problems normally do not have a preference of one Pareto-optimal solutions over others. For example, one of such problems which has been solved is bi-objective Traveling Salesman Problem (bTSP). This problem is identical to the original TSP, except that it has two length markups for each edge, and each of two objective functions corresponds to tour length is estimated by one of these length markups.
+\textbf{Multi-objective problems} are problems that have several objective functions, which sometimes have a deterministic preference model or demand the Pareto set as the solution. In practice, such problems normally do not have a preference of one Pareto-optimal solutions over others. For example, one such problem, which has been solved, is bi-objective Traveling Salesman Problem (bTSP). This problem is identical to the original TSP, except that it has two length markups for each edge, and each of two objective functions corresponds to tour length is estimated by one of these length markups.
 
 So far, various multi-objective ACO algorithms have been developed. Several ACO algorithms for resolving such problems were reviewed in the paper of L{\'o}pez-Ib{\'a}{\~n}ez and Thomas St{\"u}tzle \cite{moaco}. Different MOACO algorithms implement different design choices and, therefore, have different algorithmic components. This was the reason to implement a unified flexible framework. The developed MOACO framework encompasses many MOACO algorithms. This framework allows either to instantiate MOACO algorithms based on the existing ones, or to combine algorithmic components from different MOACO algorithms to produce new ones.
 
@@ -107,7 +107,7 @@ As it was said, these algorithmic components are combined in order to obtain new
 
 \subsection{ACOTSPQAP}
 
-ACOTSPQAP is a unified framework that was developed by researchers of the IRIDIA group, which is publicly available at http://iridia.ulb.ac.be/aco-tsp-qap/. It was developed with aim to provide generality of algorithmic components of ACO algorithms. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$). All these parameters are to be tuned by an external configuration software.
+ACOTSPQAP is a unified framework that was developed by researchers of the IRIDIA group, it is publicly available at http://iridia.ulb.ac.be/aco-tsp-qap/. It was developed with the aim to provide generality of algorithmic components of ACO algorithms. It separates the general structures of ACO metaheuristics from the problem-specific domain. All standard parameters can be specified ($\alpha, \beta, \rho, m, \epsilon, etc.$) plus one can set the specific parameters ($t_{max}, t_{min}, res_{it}$ - number of iterations since last found rb-solution, $res_{bf}$ - branching factor, $res_{dist}$ - distance between global-best and iteration-worst ants, $q_0$). All these parameters are to be tuned by an external configuration software.
 
 Algorithmic frameworks can be classified as one of these two (although their distinction is ambiguous in particular cases):
 \begin{itemize}
@@ -131,12 +131,12 @@ Another remarkable framework is \textbf{SATenstein}. It is based on solving sati
 Automatic configuration is a process that optimizes the performance of a certain algorithm as a goal function based on input parameters of the algorithm. The general parameter types are:
  
 \begin{itemize}
-\item \textbf{categorical} parameters - represent discrete values without any implicit order or distance measure between its possible values. Define the choice of constructive procedure, choice of branching strategies (i. e. algorithmic blocs) and so on. An example of such parameter in ACO algorithms is recombination operators in EAS.
+\item \textbf{categorical} parameters - represent discrete values without any implicit order or distance measure between its possible values. Define the choice of constructive procedure, choice of branching strategies (i. e. algorithmic blocs) and so on.
 \item \textbf{ordinal} parameters - are also assigned to finite discrete values, but they have implicit value order (such as \emph{low, middle, high}). Define lower bounds, neighborhoods.
-\item \textbf{numerical} parameters - define integer or real values/constants such as weighting factors, population sizes, temperature.
+\item \textbf{numerical} parameters - define integer or real values/constants such as weighting factors, population sizes.
 \end{itemize}
 
-Some of the parameters may subordinate to the other ones. This means that their values only make sense if the parameters, that they subordinate to, are assigned to certain values. This can be expressed as a scalar value constraint (e.g $a < b$) or as a dependency on concrete values of some categorical or ordinal parameter.
+Some of the parameters maybe subordinate to other ones. This means that their values only make sense if the parameters, that they subordinate to, are assigned to certain values. This can be expressed as a scalar value constraint (e.g $a < b$) or as a dependency on concrete values of some categorical or ordinal parameter.
 
 \begin{figure}[H]
   \centering
@@ -145,13 +145,8 @@ Some of the parameters may subordinate to the other ones. This means that their 
   \label{fig:autoconf}
 \end{figure}
 
-Figure \ref{fig:autoconf} shows software composition of the configuration software and software to configure. Configuration script has parameter metadata in its disposal. Based on them, the configuration software runs the software to configure with candidate configurations according to some algorithm. After the configuration process finishes, the configuration software renders the best configurations obtained. In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize).
+Figure \ref{fig:autoconf} shows the configuration software and software to configure. Configuration script has parameter metadata at its disposal. Based on them, the configuration software runs the software to configure with candidate configurations according to some algorithm. After the configuration process finishes, the configuration software renders the best configurations obtained. In the most general software case there are two measures of the performance - solution quality (to maximize) and computation time (to minimize). This general approach is called an offline tuning. It introduces a learning stage on training instances before learning on the real-world instance set.
 
-There are two application modes:
-\begin{itemize}
-\item Offline tuning - introduces a learning stage on training instances before learning on the real-world instance set.
-\item Online tuning - tunes the parameters while solving the real-world instance set.
-\end{itemize}
 
 A widely used configuration algorithmic family is racing algorithms. The simplified algorithm is shown in \ref{lst:racing} and an illustration is in \ref{fig:irace}.
 
@@ -181,7 +176,7 @@ I-RACE (iterated race) configuration implementation was developed and described 
 
 In order to tune the configurations that are sampled, IRACE algorithms uses independent sampling distributions for each of the parameters. For numeric values those are normal distributions and discretely-defined distributions for the rest. The configuration biasing procedure is based on modifying the sampling distributions.
 
-Iterated racing is an automatic configuration implementation that consists from three steps:
+Iterated racing is an automatic configuration implementation that consists of three steps:
 
 \begin{itemize}
 \item Sampling new configurations according to a particular distribution.
@@ -189,7 +184,7 @@ Iterated racing is an automatic configuration implementation that consists from 
 \item Updating the sampling distribution in order to bias the sampling towards the best configurations.
 \end{itemize}
 
-After new configurations are sampled comes the selection stage. At configuration selection stage, IRACE runs each of the configurations on a single problem instance from the predefined instance set. After each racing iteration the worst configurations are discarded. Then the rest of the configurations update parameter sampling distributions. The racing stops when the number of the survived configurations becomes small enough (defined by termination criteria).
+After new configurations are sampled comes the selection stage. At the configuration selection stage, IRACE runs each of the configurations on a single problem instance from the predefined instance set. After each racing iteration the worst configurations are discarded. Then the rest of the configurations update parameter sampling distributions. The racing stops when the number of the survived configurations becomes small enough (defined by termination criteria).
 
 Some IRACE extensions can be applied. \textbf{Initial configurations} can be set before the run of the IRACE. \textbf{Soft-restart} is used for preventing premature convergence. Such convergence may suppresses configuration diversity and, therefore some good configurations may be lost. This restart is triggered if the value of an ad hoc function of configuration distance is lower than a certain margin. Then reinitialization is applied to the elite configurations.
 
